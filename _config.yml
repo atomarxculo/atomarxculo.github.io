@@ -1,3 +1,6 @@
+title: Blog Samuel
+author: Samuel
+email: your-email@domain.com
 theme: jekyll-theme-minimal
-markdown: kramdown
-url: "https://atomarxculo.github.io/"
+# social links
+show_excerpts: false # set to false to remove excerpts on the homepage
