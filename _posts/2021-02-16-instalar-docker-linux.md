@@ -8,7 +8,7 @@ fig-caption: # Add figcaption (optional)
 tags: [docker]
 ---
 
-Hoy hablaremos de una herramienta muy interesante y que cada vez tiene más cabida en nuestro trabajo como sysadmin, Docker. Aprenderemos a instalar Docker en Linux.  
+Hoy hablaremos de una herramienta muy interesante y que cada vez tiene más cabida en nuestro trabajo como sysadmin, Docker. Aprenderemos a instalar Docker en Linux.
 
 Vamos a empezar hablando de lo que es Docker, para tener una idea. Docker es una tecnología de creación de contenedores que permite la creación y el uso de contenedores Linux o Windows. Suelta la explicación que viene en la documentación, seguimos desglosando lo qué es Docker.
 
