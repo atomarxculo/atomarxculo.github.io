@@ -8,8 +8,14 @@ description: > # this means to ignore newlines until "baseurl:"
 permalink: ':title/'
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.samurantech.tk" # the base hostname & protocol for your site, e.g. http://example.com
-site-twitter: #if your site has a twitter account, enter it here
+site-twitter: samurantech #if your site has a twitter account, enter it here
 locale: es_ES
+google_site_verification: dHE1N53brPusVaW8Aqi3fnHh3gdjmzVbzhlqolgZr04
+
+# Twitter
+twitter:
+  username: samurantech
+  card: summary
 
 # Author Settings
 author: Samuran # add your name
@@ -25,7 +31,7 @@ social-email: samuel.hernandez@gmx.es # add your Email address
 discus-identifier: samuran-blog # add your discus identifier
 
 # Tracker
-analytics: # Google Analytics
+analytics: G-PRRMV6XZEK # Google Analytics
 
 # Build Settings
 markdown: kramdown
