@@ -1,5 +1,7 @@
 name: Blog Samuran Tech
 title: Blog Samuran Tech
+tagline: Un blog sobre las cosas que he ido aprendiendo en mis pocos años de sysadmin
+  y las cosas que iré aprendiendo.
 description: > # this means to ignore newlines until "baseurl:"
   Un blog sobre las cosas que he ido aprendiendo en mis pocos años de sysadmin
   y las cosas que iré aprendiendo.
@@ -7,6 +9,7 @@ permalink: ':title/'
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.samurantech.tk" # the base hostname & protocol for your site, e.g. http://example.com
 site-twitter: #if your site has a twitter account, enter it here
+locale: es_ES
 
 # Author Settings
 author: Samuran # add your name
@@ -30,6 +33,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jemoji
+  - jekyll-seo-tag
 
 paginate: 8
 paginate_path: "/page/:num"

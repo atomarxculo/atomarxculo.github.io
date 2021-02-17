@@ -1,4 +1,5 @@
+---
+layout: none
+---
 User-agent: *
-Allow: /
-Allow: /sitemap.htm
-Sitemap: https://samurantech.tk/sitemap.xml
+Sitemap: {{ site.url }}/sitemap.xml
