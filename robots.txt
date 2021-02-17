@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 Allow: /sitemap.htm
-Sitemap: https://samurantech.tk/sitemap.xml/
+Sitemap: https://samurantech.tk/sitemap.xml
