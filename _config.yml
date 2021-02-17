@@ -30,9 +30,6 @@ social-email: samuel.hernandez@gmx.es # add your Email address
 # Disqus
 discus-identifier: samuran-blog # add your discus identifier
 
-# Tracker
-analytics: G-PRRMV6XZEK # Google Analytics
-
 # Build Settings
 markdown: kramdown
 plugins:
