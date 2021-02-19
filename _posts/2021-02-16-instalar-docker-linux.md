@@ -24,7 +24,7 @@ Instalaremos Docker en un CentOS 7.
 
 En la terminal, escribiremos el siguiente comando para actualizar los repositorios de nuestro servidor.
 
-```bash
+```cmd
 sudo yum update -y
 ```
 
@@ -32,7 +32,7 @@ sudo yum update -y
 
 El siguiente paso es instalar las dependencias que necesita Docker para instalarse.
 
-```bash
+```cmd
 sudo yum install yum-utils device-mapper-persistent-data lvm2 -y
 ```
 
@@ -40,7 +40,7 @@ sudo yum install yum-utils device-mapper-persistent-data lvm2 -y
 
 Por defecto, Docker no viene en los repositorios oficiales de Centos, por lo que tenemos que agregarlos nosotros para poder instalarlo. Esta es la versión estable.
 
-```bash
+```cmd
 sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
 ```
 
@@ -48,7 +48,7 @@ sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/dock
 
 Finalmente, instalamos Docker ejecutando el siguiente comando.
 
-```bash
+```cmd
 sudo yum install docker-ce
 ```
 
@@ -58,19 +58,19 @@ Aunque hayamos instalado Docker, todavía no se está ejecutando. Tenemos que co
 
 Habilitamos que el servicio inicie con el arranque del servidor.
 
-```bash
+```cmd
 systemctl enable docker
 ```
 
 Iniciamos el servicio de Docker para que empiece a funcionar.
 
-```bash
+```cmd
 systemctl start docker
 ```
 
 Comprobamos que el servicio está iniciado.
 
-```bash
+```cmd
 systemctl status docker
 ```
 
@@ -80,13 +80,13 @@ Nos debería aparecer una línea verde que indica que el servicio está en funci
 
 En entornos de laboratorio se suele utilizar el usuario root para poder trabajar comodamente, pero una buena práctica es darle permisos a un usuario que no sea root permisos sobre el grupo docker. Si estáis usando el usuario al que habéis dado permisos, tenéis que reiniciar la sesión.
 
-```bash
+```cmd
 sudo usermod -aG docker <usuario>
 ```
 
 Una vez hecho esto, vamos a comprobar que Docker funciona correctamente.
 
-```bash
+```cmd
 docker run hello-world
 ```
 
