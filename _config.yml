@@ -1,16 +1,15 @@
-name: Blog Samuran Tech
-title: Blog Samuran Tech
+name: Samuran Tech - Sysadmin Blog
+title: Samuran Tech - Sysadmin Blog
 tagline: Un blog sobre las cosas que he ido aprendiendo en mis pocos años de sysadmin
   y las cosas que iré aprendiendo.
 description: > # this means to ignore newlines until "baseurl:"
   Un blog sobre las cosas que he ido aprendiendo en mis pocos años de sysadmin
   y las cosas que iré aprendiendo.
 permalink: ':title/'
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://www.samurantech.tk" # the base hostname & protocol for your site, e.g. http://example.com
 site-twitter: samurantech #if your site has a twitter account, enter it here
 locale: es_ES
-google_site_verification: dHE1N53brPusVaW8Aqi3fnHh3gdjmzVbzhlqolgZr04
 
 # Twitter
 twitter:
