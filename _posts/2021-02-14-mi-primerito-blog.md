@@ -14,8 +14,6 @@ Desde hace tiempo he querido tener una página web propia y subir en ella todas 
 
 Me haría mucha ilusión que hubiera una persona a la que le resultase de utilidad lo que vaya a escribir, siempre gusta saber que has enseñado algo nuevo a alguien.
 
-Si el blog fuera bien, sería genial migrar el dominio a uno `.com`, mucho más profesional.
-
 Con estas líneas expreso brevemente lo que me ronda por la cabeza respecto a esto. Espero poder escribir muchos posts y que esto vaya viento en popa.
 
 Un saludo. ¡Hasta la próxima!
