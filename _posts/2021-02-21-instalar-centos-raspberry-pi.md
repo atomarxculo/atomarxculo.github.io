@@ -98,9 +98,32 @@ Si al final de estos comandos ponemos la opción `-y`, no será necesario confir
 
 Con esto podemos dar por finalizado este post, en posteriores posts le daremos uso a la Raspberry y realizarle una configuración más avanzada.
 
+## Aporte extra
+
+Trabajando con CentOS en Raspberry Pi por defecto no vienen disponibles los repositorios _epel_, pero podemos activarlos sin mayor inconveniente.
+En la [Wiki de CentOS][wikicentos] te indican cómo activarlo.
+
+Para ello hay que ejecutar lo siguiente:
+
+```text
+cat > /etc/yum.repos.d/epel.repo << EOF
+[epel]
+name=Epel rebuild for armhfp
+baseurl=https://armv7.dev.centos.org/repodir/epel-pass-1/
+enabled=1
+gpgcheck=0
+
+EOF
+```
+
+Eso creará un fichero indicando que también busque en los repositorios de la URL indicada.
+
+Una vez hecho, actualizamos con `yum update -y` y ya podremos seguir trabajando.
+
 Espero que os haya gustado y os haya servido de ayuda. ¡Hasta la próxima!
 
 [amazonraspberry]: https://www.amazon.es/gp/product/B07TC2BK1X
 [centos]: http://isoredirect.centos.org/altarch/7/isos/armhfp/
 [rufus]: https://rufus.ie/
 [amazonpack]: https://www.amazon.es/gp/product/B07WN3CHGH
+[wikicentos]: https://wiki.centos.org/SpecialInterestGroup/AltArch/armhfp#How_Can_I_Enable_EPEL_7_on_armhfp_.3F
