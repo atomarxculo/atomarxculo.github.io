@@ -63,7 +63,11 @@ Es recomendable cambiar la contraseña, para ello ejecutamos el comando:
 passwd
 ```
 
-Ahora que la hemos cambiado, vamos a actualizarla e instalar algún paquete. Para manejar los paquetes en CentOS, usamos el comando `yum`.
+Expandimos la partición de root para que coja el tamaño máximo de la tarjeta SD con `rootfs-expand`.
+
+Configuramos la zona horaria que corresponda con `timedatectl set-timezone Europe/Madrid`.
+
+Ahora que hemos hecho esos cambios, vamos a actualizarla e instalar algún paquete. Para manejar los paquetes en CentOS, usamos el comando `yum`.
 
 * Actualizar:
 ```bash
