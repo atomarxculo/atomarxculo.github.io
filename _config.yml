@@ -2,7 +2,7 @@ name: Samuran Tech - Sysadmin Blog
 title: Samuran Tech - Sysadmin Blog
 tagline: Un blog sobre las cosas que he ido aprendiendo en mis pocos años de sysadmin
   y las cosas que iré aprendiendo.
-description: > # this means to ignore newlines until "baseurl:"
+description:
   Un blog sobre las cosas que he ido aprendiendo en mis pocos años de sysadmin
   y las cosas que iré aprendiendo.
 permalink: ':title/'
