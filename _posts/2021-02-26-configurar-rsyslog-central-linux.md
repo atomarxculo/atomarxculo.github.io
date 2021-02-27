@@ -73,7 +73,7 @@ semanage port -a -t syslogd_port_t -p udp 514
 semanage port -a -t syslogd_port_t -p tcp 514 
 ```
 
-Si nos aparece que el comando `semanage` no existe, tenemos que ejecutar el siguiente comando para poder instalarlo.
+Si nos aparece que el comando `semanage` no existe, tenemos que ejecutar el siguiente comando para poder instalarlo.  
 `yum install policycoreutils-python -y`
 
 ## Configurar rsyslog en el cliente
