@@ -14,7 +14,7 @@ Vamos a empezar hablando de lo que es Docker, para tener una idea. Docker es una
 
 Docker revoluciona el concepto que tenemos de máquinas virtuales, ya no virtualiza un sistema operativo como venimos haciendo desde hace años, lo que hace es virtualizar el software encapsulandolo, gracias a que utiliza caracteristicas del kernel de Linux, de ahí que se llamen contenedor, haciendo referencia a las cajas de los barcos. Dentro del contenedor se ejecutan todas aquellas cosas que la aplicación necesita para funcionar y la propia aplicación. El contenedor es la aplicación en funcionamiento por así decirlo.
 
-En posts posteriores seguiremos viendo más características del software y explicando cómo se compone, por ahora, vamos al lío que a eso hemos venido.
+En posts posteriores seguiremos viendo más características del software y explicando cómo se compone, por ahora vamos al lío, que a eso hemos venido.
 
 ## Instalación CentOS
 
@@ -22,7 +22,7 @@ Instalaremos Docker en un CentOS 7.
 
 ### Paso 1: Actualizar paquetes
 
-En la terminal, escribiremos el siguiente comando para actualizar los repositorios de nuestro servidor.
+En la terminal, escribiremos el siguiente comando para actualizar los repositorios de nuestro servidor:
 
 ```cmd
 sudo yum update -y
@@ -46,7 +46,7 @@ sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/dock
 
 ### Paso 4: Instalamos Docker CE (Community Edition)
 
-Finalmente, instalamos Docker ejecutando el siguiente comando.
+Finalmente, instalamos Docker ejecutando el siguiente comando:
 
 ```cmd
 sudo yum install docker-ce
@@ -56,19 +56,19 @@ sudo yum install docker-ce
 
 Aunque hayamos instalado Docker, todavía no se está ejecutando. Tenemos que configurarlo ejecutando los siguientes comandos.
 
-Habilitamos que el servicio inicie con el arranque del servidor.
+* Habilitamos que el servicio inicie con el arranque del servidor:
 
 ```cmd
 systemctl enable docker
 ```
 
-Iniciamos el servicio de Docker para que empiece a funcionar.
+* Iniciamos el servicio de Docker para que empiece a funcionar:
 
 ```cmd
 systemctl start docker
 ```
 
-Comprobamos que el servicio está iniciado.
+* Comprobamos que el servicio está iniciado:
 
 ```cmd
 systemctl status docker
@@ -78,7 +78,7 @@ Nos debería aparecer una línea verde que indica que el servicio está en funci
 
 ### Paso 6: Trabajando con Docker
 
-En entornos de laboratorio se suele utilizar el usuario root para poder trabajar comodamente, pero una buena práctica es darle permisos a un usuario que no sea root permisos sobre el grupo docker. Si estáis usando el usuario al que habéis dado permisos, tenéis que reiniciar la sesión.
+En entornos de laboratorio se suele utilizar el usuario root para poder trabajar comodamente, pero una buena práctica es darle permisos a un usuario que no sea root  sobre el grupo docker. Si estáis usando el usuario al que habéis dado permisos, tenéis que reiniciar la sesión.
 
 ```cmd
 sudo usermod -aG docker <usuario>
@@ -90,7 +90,7 @@ Una vez hecho esto, vamos a comprobar que Docker funciona correctamente.
 docker run hello-world
 ```
 
-Con este comando, descargaremos el contenedor _hello-world_ y lo ejecutaremos una vez haya terminado. Si todo ha funcionado correctamente, nos aparecerá el siguiente mensaje.
+Con este comando, descargaremos el contenedor _hello-world_ y lo ejecutaremos una vez haya terminado. Si todo ha funcionado correctamente, nos aparecerá el siguiente mensaje:
 
 ```text
 Hello from Docker!
