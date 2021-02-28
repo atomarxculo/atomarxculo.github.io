@@ -10,9 +10,9 @@ tags: [docker, linux, centos]
 
 Hoy hablaremos de una herramienta muy interesante y que cada vez tiene más cabida en nuestro trabajo como sysadmin, Docker. Aprenderemos a instalar Docker en Linux.
 
-Vamos a empezar hablando de lo que es Docker, para tener una idea. Docker es una tecnología de creación de contenedores que permite la creación y el uso de contenedores Linux o Windows. Suelta la explicación que viene en la documentación, seguimos desglosando lo qué es Docker.
+Vamos a empezar hablando de lo que es Docker, para tener una idea. Docker es una tecnología de creación de contenedores que permite la creación y el uso de contenedores Linux o Windows. Suelta la explicación que viene en la documentación, seguimos desglosando qué es Docker.
 
-Docker revoluciona el concepto que tenemos de máquinas virtuales, ya no virtualiza un sistema operativo como venimos haciendo desde hace años, lo que hace es virtualizar el software encapsulandolo, gracias a que utiliza caracteristicas del kernel de Linux, de hay que se llamen contenedor, haciendo referencia a las cajas de los barcos. Dentro del contenedor se ejecuta todas aquellas cosas que la aplicación necesita para funcionar y la propia aplicación. El contenedor es la aplicación en funcionamiento por así decirlo.
+Docker revoluciona el concepto que tenemos de máquinas virtuales, ya no virtualiza un sistema operativo como venimos haciendo desde hace años, lo que hace es virtualizar el software encapsulandolo, gracias a que utiliza caracteristicas del kernel de Linux, de ahí que se llamen contenedor, haciendo referencia a las cajas de los barcos. Dentro del contenedor se ejecutan todas aquellas cosas que la aplicación necesita para funcionar y la propia aplicación. El contenedor es la aplicación en funcionamiento por así decirlo.
 
 En posts posteriores seguiremos viendo más características del software y explicando cómo se compone, por ahora, vamos al lío que a eso hemos venido.
 
