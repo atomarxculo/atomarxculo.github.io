@@ -8,7 +8,7 @@ fig-caption: # Add figcaption (optional)
 tags: [centos, raspberry pi]
 ---
 
-Hace tiempo tengo varias Raspberry Pi muertas de risa y quiero darles un algún uso, pero no quiero utilizar Raspberry Pi OS, así que instalaremos CentOS 7 para arquitecturas ARM. Como curiosidad, Raspberry Pi OS, antes Raspbian es el sistema operativo que se suele utilizar en Raspberry Pi basado en Debian.
+Desde hace tiempo tengo varias Raspberry Pi muertas de risa y quiero darles un algún uso, pero no quiero utilizar Raspberry Pi OS, así que instalaremos CentOS 7 para arquitecturas ARM. Como curiosidad, Raspberry Pi OS, antes Raspbian, es el sistema operativo que se suele utilizar en Raspberry Pi basado en Debian.
 
 En caso utilizaré una Raspberry Pi 4 de 4GB de RAM ([Enlace artículo Amazon][amazonraspberry], post **no** esponsorizado por Amazon).
 
@@ -38,11 +38,11 @@ sha256sum <fichero>
 ```
 En este caso usaremos este comando porque queremos obtener el hash SHA256.
 
-Obtenido el hash con el comando, ahora sólo es compararlo con el de la página. No me seáis cafres y con que comprobéis los primeros 6 dígitos y los 6 últimos valdría.
+Obtenido el hash con el comando, ahora sólo es comparar con el que se muestra en la página. No me seáis cafres y con que comprobéis los primeros 6 dígitos y los 6 últimos valdría.
 
 ## Montar CentOS en la tarjeta SD
 
-Cuando hayamos descargado la imagen de CentOS y comprobadp que el hash es correcto, vamos a montar la ISO en nuestra tarjeta SD. Yo en este caso utilizaré [Rufus][rufus], pero podéis usar otros como BalenaEtcher.
+Cuando hayamos descargado la imagen de CentOS y comprobado que el hash es correcto, vamos a montar la ISO en nuestra tarjeta SD. Yo en este caso utilizaré [Rufus][rufus], pero podéis usar otros como BalenaEtcher.
 **A tener en cuenta:** los datos que tengamos en la tarjeta SD se borrarán porque ésta tiene que formatearse.
 
 En caso de que vuestro equipo no tenga lector de tarjetas SD, como me pasa a mí, podéis comprar un lector SD/Micro SD adaptador USB.
@@ -51,7 +51,7 @@ Una vez terminado, pondremos la tarjeta en nuestra Raspberry Pi y la conectaremo
 
 ## Trabajando con CentOS
 
-Para poder conectarnos a nuestra Raspberry Pi tenemos que tener un adaptador Micro HDMI a HDMI, yo os recomiendo comprar este pack que viene con una carcasa para darle un mejor aspecto.  ([Enlace artículo Amazon][amazonpack])
+Para poder conectarnos a nuestra Raspberry Pi directamente, tenemos que tener un adaptador Micro HDMI a HDMI, yo os recomiendo comprar este pack que viene con una carcasa para darle un mejor aspecto.  ([Enlace artículo Amazon][amazonpack])
 
 Además de un teclado USB para poder escribir en la terminal.
 

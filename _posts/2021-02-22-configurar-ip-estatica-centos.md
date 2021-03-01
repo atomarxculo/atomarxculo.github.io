@@ -20,7 +20,7 @@ Podemos acceder al servidor conectando una pantalla y un teclado directamente a 
 
 Para poder conectarnos por SSH, tendremos que averiguar su IP. Podemos saber esto yendo al DHCP del router o hacer un escaneo de red con herramientas como [Advanced IP Scanner][ipscanner].
 
-Una vez averiguada la IP, podemos conectarnos utilizando [Putty][puttylink] o [MobaXterm][mobalink], eso os lo dejo al gusto de cada uno. Ponemos la IP del servidor y le ponemos las credenciales, que será el usuario `root` y la contraseña que hayamos definido.
+Una vez averiguada la IP, podemos conectarnos por SSH utilizando [Putty][puttylink] o [MobaXterm][mobalink], eso os lo dejo al gusto de cada uno. Ponemos la IP del servidor y le ponemos las credenciales, que será el usuario `root` y la contraseña que hayamos definido.
 
 ## Configurar la IP estática
 
