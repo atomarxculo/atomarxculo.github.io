@@ -12,7 +12,7 @@ Hoy hablaremos de una herramienta muy interesante y que cada vez tiene más cabi
 
 Vamos a empezar hablando de lo que es Docker, para tener una idea. Docker es una tecnología de creación de contenedores que permite la creación y el uso de contenedores Linux o Windows. Suelta la explicación que viene en la documentación, seguimos desglosando qué es Docker.
 
-Docker revoluciona el concepto que tenemos de máquinas virtuales, ya no virtualiza un sistema operativo como venimos haciendo desde hace años, lo que hace es virtualizar el software encapsulandolo, gracias a que utiliza caracteristicas del kernel de Linux, de ahí que se llamen contenedor, haciendo referencia a las cajas de los barcos. Dentro del contenedor se ejecutan todas aquellas cosas que la aplicación necesita para funcionar y la propia aplicación. El contenedor es la aplicación en funcionamiento por así decirlo.
+Docker revoluciona el concepto que tenemos de máquinas virtuales, ya no virtualiza un sistema operativo como venimos haciendo desde hace años, lo que hace es virtualizar el software encapsulándolo, gracias a que utiliza características del kernel de Linux, de ahí que se llamen contenedores, haciendo referencia a las cajas de los barcos. Dentro del contenedor se ejecutan todas aquellas cosas que la aplicación necesita para funcionar y la propia aplicación. El contenedor es la aplicación en funcionamiento por así decirlo.
 
 En posts posteriores seguiremos viendo más características del software y explicando cómo se compone, por ahora vamos al lío, que a eso hemos venido.
 
@@ -22,7 +22,7 @@ Instalaremos Docker en un CentOS 7.
 
 ### Paso 1: Actualizar paquetes
 
-En la terminal, escribiremos el siguiente comando para actualizar los repositorios de nuestro servidor:
+En la terminal, escribiremos el siguiente comando para actualizar los repositorios de nuestro servidor:  
 
 ```cmd
 sudo yum update -y
@@ -30,7 +30,7 @@ sudo yum update -y
 
 ### Paso 2: Instalamos dependencias
 
-El siguiente paso es instalar las dependencias que necesita Docker para instalarse.
+El siguiente paso es instalar las dependencias que necesita Docker para instalarse.  
 
 ```cmd
 sudo yum install yum-utils device-mapper-persistent-data lvm2 -y
@@ -38,7 +38,7 @@ sudo yum install yum-utils device-mapper-persistent-data lvm2 -y
 
 ### Paso 3: Agregamos el repositorio de Docker a CentOS
 
-Por defecto, Docker no viene en los repositorios oficiales de Centos, por lo que tenemos que agregarlos nosotros para poder instalarlo. Esta es la versión estable.
+Por defecto, Docker no viene en los repositorios oficiales de Centos, por lo que tenemos que agregarlos nosotros para poder instalarlo. Instalaremos la versión estable.  
 
 ```cmd
 sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
@@ -46,7 +46,7 @@ sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/dock
 
 ### Paso 4: Instalamos Docker CE (Community Edition)
 
-Finalmente, instalamos Docker ejecutando el siguiente comando:
+Finalmente, instalamos Docker ejecutando el siguiente comando:  
 
 ```cmd
 sudo yum install docker-ce
@@ -54,21 +54,21 @@ sudo yum install docker-ce
 
 ### Paso 5: Administrar el servicio de Docker
 
-Aunque hayamos instalado Docker, todavía no se está ejecutando. Tenemos que configurarlo ejecutando los siguientes comandos.
+Aunque hayamos instalado Docker, todavía no se está ejecutando. Tenemos que configurarlo ejecutando los siguientes comandos:
 
-* Habilitamos que el servicio inicie con el arranque del servidor:
+* Habilitamos que el servicio inicie con el arranque del servidor:  
 
 ```cmd
 systemctl enable docker
 ```
 
-* Iniciamos el servicio de Docker para que empiece a funcionar:
+* Iniciamos el servicio de Docker para que empiece a funcionar:  
 
 ```cmd
 systemctl start docker
 ```
 
-* Comprobamos que el servicio está iniciado:
+* Comprobamos que el servicio está iniciado:  
 
 ```cmd
 systemctl status docker
@@ -78,13 +78,13 @@ Nos debería aparecer una línea verde que indica que el servicio está en funci
 
 ### Paso 6: Trabajando con Docker
 
-En entornos de laboratorio se suele utilizar el usuario root para poder trabajar comodamente, pero una buena práctica es darle permisos a un usuario que no sea root  sobre el grupo docker. Si estáis usando el usuario al que habéis dado permisos, tenéis que reiniciar la sesión.
+En entornos de laboratorio se suele utilizar el usuario root para poder trabajar comodamente, pero una buena práctica es darle permisos a un usuario que no sea root sobre el grupo docker. Si estáis usando el usuario al que habéis dado permisos, tenéis que reiniciar la sesión.
 
 ```cmd
 sudo usermod -aG docker <usuario>
 ```
 
-Una vez hecho esto, vamos a comprobar que Docker funciona correctamente.
+Una vez hecho esto, vamos a comprobar que Docker funciona correctamente.  
 
 ```cmd
 docker run hello-world
