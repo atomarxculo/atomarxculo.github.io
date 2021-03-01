@@ -54,9 +54,9 @@ wsl -l -v
 
 ## Instalar y configurar Docker
 
-Ya es hora de instalar Docker después de haber seguido los pasos anteriores. Descargamos Docker Desktop for Windows desde la web de [Docker][dockerweb] o de [Docker Hub][dockerhub] y lo instalamos. En la instalación podremos habilitar la compatibilidad con WSL 2. Tendremos que reiniciar una vez termine.
+Ya es hora de instalar Docker después de haber seguido los pasos anteriores. Descargamos *Docker Desktop for Windows* desde la web de [Docker][dockerweb] o de [Docker Hub][dockerhub] y lo instalamos. En la instalación podremos habilitar la compatibilidad con WSL 2 y una vez termine, tendremos que reiniciar el equipo.
 
-Una vez terminado nos aparecerá una ventana de Docker Desktop al iniciar el equipo con un tutorial que podemos hacer u omitir.
+Ahora que el equipo haya arrancado e iniciemos Docker Desktop, nos aparecerá una ventana en la aplicación con un tutorial que podemos hacer u omitir.
 
 Para comprobar que todo ha ido bien, abrimos una consola de Powershell y ejecutamos la imagen hello-world como la anterior vez.
 
@@ -64,7 +64,7 @@ Para comprobar que todo ha ido bien, abrimos una consola de Powershell y ejecuta
 docker run hello-world
 ```
 
-Es una herramienta muy potente que yo utilizo para realizar desarrollos y pruebas sin tener que desplegar una máquina virtual, por lo cual la recomiendo.
+Es una herramienta muy potente que yo utilizo para realizar desarrollos y pruebas sin tener que desplegar una máquina virtual, ahorrando mucho tiempo en el proceso, por lo cual la recomiendo.
 
 Espero que os haya gustado y os haya servido de ayuda. ¡Hasta la próxima!
 
