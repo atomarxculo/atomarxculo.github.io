@@ -1,5 +1,0 @@
-I"`<p>Para hacer esta web, utilicé Jekyll, un generador de sitios web estáticos que permite crear cada página web a partir de un fichero Markdown. Para que sea mucho más comodo utilizarlo, usaremos Docker para que sea sólo usar un contenedor y no tener que instalar más cosas en nuestros equipos.</p>
-
-<h2 id="crear-sitio-web">Crear sitio web</h2>
-
-:ET
