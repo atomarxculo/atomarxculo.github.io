@@ -16,15 +16,11 @@ Docker revoluciona el concepto que tenemos de máquinas virtuales, ya no virtual
 
 En posts posteriores seguiremos viendo más características del software y explicando cómo se compone, por ahora vamos al lío, que a eso hemos venido.
 
-## Instalación CentOS
-
-Instalaremos Docker en un CentOS 7.
-
 ### Paso 1: Actualizar paquetes
 
 En la terminal, escribiremos el siguiente comando para actualizar los repositorios de nuestro servidor:  
 
-```cmd
+```bash
 sudo yum update -y
 ```
 
@@ -32,7 +28,7 @@ sudo yum update -y
 
 El siguiente paso es instalar las dependencias que necesita Docker para instalarse.  
 
-```cmd
+```bash
 sudo yum install yum-utils device-mapper-persistent-data lvm2 -y
 ```
 
@@ -40,7 +36,7 @@ sudo yum install yum-utils device-mapper-persistent-data lvm2 -y
 
 Por defecto, Docker no viene en los repositorios oficiales de Centos, por lo que tenemos que agregarlos nosotros para poder instalarlo. Instalaremos la versión estable.  
 
-```cmd
+```bash
 sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
 ```
 
@@ -48,7 +44,7 @@ sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/dock
 
 Finalmente, instalamos Docker ejecutando el siguiente comando:  
 
-```cmd
+```bash
 sudo yum install docker-ce
 ```
 
@@ -58,19 +54,19 @@ Aunque hayamos instalado Docker, todavía no se está ejecutando. Tenemos que co
 
 * Habilitamos que el servicio inicie con el arranque del servidor:  
 
-```cmd
+```bash
 systemctl enable docker
 ```
 
 * Iniciamos el servicio de Docker para que empiece a funcionar:  
 
-```cmd
+```bash
 systemctl start docker
 ```
 
 * Comprobamos que el servicio está iniciado:  
 
-```cmd
+```bash
 systemctl status docker
 ```
 
@@ -80,13 +76,13 @@ Nos debería aparecer una línea verde que indica que el servicio está en funci
 
 En entornos de laboratorio se suele utilizar el usuario root para poder trabajar comodamente, pero una buena práctica es darle permisos a un usuario que no sea root sobre el grupo docker. Si estáis usando el usuario al que habéis dado permisos, tenéis que reiniciar la sesión.
 
-```cmd
-sudo usermod -aG docker <usuario>
+```bash
+sudo usermod -aG docker $USER
 ```
 
 Una vez hecho esto, vamos a comprobar que Docker funciona correctamente.  
 
-```cmd
+```bash
 docker run hello-world
 ```
 

@@ -1,0 +1,120 @@
+I"�<p>En el post anterior aprendimos a instalar Docker, en este post haremos lo propio Ubuntu. Aunque haya varias maneras de instalarlo, en esta caso utilizaremos la instalación por repositorio.</p>
+
+<h3 id="paso-1-eliminar-versiones-anteriores-de-docker">Paso 1: Eliminar versiones anteriores de Docker</h3>
+
+<p>Siempre viene bien hacer una limpieza por si el equipo con el que estamos ya tiene una versión anterior de Docker instalada.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt remove docker docker-engine docker.io containerd runc
+</code></pre></div></div>
+
+<h3 id="paso-2-instalamos-dependencias">Paso 2: Instalamos dependencias</h3>
+
+<p>El siguiente paso es instalar las dependencias que necesita Docker para instalarse.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt update
+<span class="nb">sudo </span>apt <span class="nb">install</span> <span class="se">\</span>
+    ca-certificates <span class="se">\</span>
+    curl <span class="se">\</span>
+    gnupg <span class="se">\</span>
+    lsb-release
+</code></pre></div></div>
+
+<h3 id="paso-3-configurar-el-repositorio-de-docker">Paso 3: Configurar el repositorio de Docker</h3>
+
+<p>Agregamos la key GPG oficial de Docker.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo mkdir</span> <span class="nt">-p</span> /etc/apt/keyrings
+curl <span class="nt">-fsSL</span> https://download.docker.com/linux/ubuntu/gpg | <span class="nb">sudo </span>gpg <span class="nt">--dearmor</span> <span class="nt">-o</span> /etc/apt/keyrings/docker.gpg
+</code></pre></div></div>
+
+<p>Con este comando añadimos el repositorio dentro de la carpeta <code class="language-plaintext highlighter-rouge">sources.list.d</code></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">echo</span> <span class="se">\</span>
+  <span class="s2">"deb [arch=</span><span class="si">$(</span>dpkg <span class="nt">--print-architecture</span><span class="si">)</span><span class="s2"> signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu </span><span class="se">\</span><span class="s2">
+  </span><span class="si">$(</span>lsb_release <span class="nt">-cs</span><span class="si">)</span><span class="s2"> stable"</span> | <span class="nb">sudo tee</span> /etc/apt/sources.list.d/docker.list <span class="o">&gt;</span> /dev/null
+</code></pre></div></div>
+
+<p>Y actualizamos los repositorios.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt update
+</code></pre></div></div>
+
+<h3 id="paso-4-instalamos-docker-ce-community-edition">Paso 4: Instalamos Docker CE (Community Edition)</h3>
+
+<p>Finalmente, instalamos Docker ejecutando el siguiente comando:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get <span class="nb">install </span>docker-ce docker-ce-cli containerd.io docker-compose-plugin
+</code></pre></div></div>
+
+<h3 id="paso-5-administrar-el-servicio-de-docker">Paso 5: Administrar el servicio de Docker</h3>
+
+<p>Aunque hayamos instalado Docker, todavía no se está ejecutando. Tenemos que configurarlo ejecutando los siguientes comandos:</p>
+
+<ul>
+  <li>Habilitamos que el servicio inicie con el arranque del servidor:</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>systemctl <span class="nb">enable </span>docker
+</code></pre></div></div>
+
+<ul>
+  <li>Iniciamos el servicio de Docker para que empiece a funcionar:</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>systemctl start docker
+</code></pre></div></div>
+
+<ul>
+  <li>Podemos habilitar el servicio y que arranque a la vez si ejecutamos el siguiente comando:</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>systemctl <span class="nb">enable </span>docker <span class="nt">--now</span>
+</code></pre></div></div>
+
+<ul>
+  <li>Comprobamos que el servicio está iniciado:</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>systemctl status docker
+</code></pre></div></div>
+
+<p>Nos debería aparecer una línea verde que indica que el servicio está en funcionamiento.</p>
+
+<h3 id="paso-6-trabajando-con-docker">Paso 6: Trabajando con Docker</h3>
+
+<p>Tendremos que agregar el usuario con el que hemos instalado Docker al grupo correspondiente para que pueda ejecutar los comandos sin tener que utilizar <code class="language-plaintext highlighter-rouge">sudo</code> constantemente.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>usermod <span class="nt">-aG</span> docker <span class="nv">$USER</span>
+</code></pre></div></div>
+
+<p>Una vez hecho esto, vamos a comprobar que Docker funciona correctamente.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run hello-world
+</code></pre></div></div>
+
+<p>Con este comando, descargaremos el contenedor <em>hello-world</em> y lo ejecutaremos una vez haya terminado. Si todo ha funcionado correctamente, nos aparecerá el siguiente mensaje:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+    (amd64)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
+Share images, automate workflows, and more with a free Docker ID:
+ https://hub.docker.com/
+
+For more examples and ideas, visit:
+ https://docs.docker.com/get-started/
+</code></pre></div></div>
+
+<p>Espero que os haya gustado y os haya servido de ayuda. ¡Hasta la próxima!</p>
+:ET

@@ -1,0 +1,103 @@
+I"<p>Hoy hablaremos de una herramienta muy interesante y que cada vez tiene más cabida en nuestro trabajo como sysadmin, Docker. Aprenderemos a instalar Docker en Linux.</p>
+
+<p>Vamos a empezar hablando de lo que es Docker, para tener una idea. Docker es una tecnología de creación de contenedores que permite la creación y el uso de contenedores Linux o Windows. Suelta la explicación que viene en la documentación, seguimos desglosando qué es Docker.</p>
+
+<p>Docker revoluciona el concepto que tenemos de máquinas virtuales, ya no virtualiza un sistema operativo como venimos haciendo desde hace años, lo que hace es virtualizar el software encapsulándolo, gracias a que utiliza características del kernel de Linux, de ahí que se llamen contenedores, haciendo referencia a las cajas de los barcos. Dentro del contenedor se ejecutan todas aquellas cosas que la aplicación necesita para funcionar y la propia aplicación. El contenedor es la aplicación en funcionamiento por así decirlo.</p>
+
+<p>En posts posteriores seguiremos viendo más características del software y explicando cómo se compone, por ahora vamos al lío, que a eso hemos venido.</p>
+
+<h3 id="paso-1-actualizar-paquetes">Paso 1: Actualizar paquetes</h3>
+
+<p>En la terminal, escribiremos el siguiente comando para actualizar los repositorios de nuestro servidor:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>yum update <span class="nt">-y</span>
+</code></pre></div></div>
+
+<h3 id="paso-2-instalamos-dependencias">Paso 2: Instalamos dependencias</h3>
+
+<p>El siguiente paso es instalar las dependencias que necesita Docker para instalarse.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>yum <span class="nb">install </span>yum-utils device-mapper-persistent-data lvm2 <span class="nt">-y</span>
+</code></pre></div></div>
+
+<h3 id="paso-3-agregamos-el-repositorio-de-docker-a-centos">Paso 3: Agregamos el repositorio de Docker a CentOS</h3>
+
+<p>Por defecto, Docker no viene en los repositorios oficiales de Centos, por lo que tenemos que agregarlos nosotros para poder instalarlo. Instalaremos la versión estable.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>yum-config-manager <span class="nt">--add-repo</span> https://download.docker.com/linux/centos/docker-ce.repo
+</code></pre></div></div>
+
+<h3 id="paso-4-instalamos-docker-ce-community-edition">Paso 4: Instalamos Docker CE (Community Edition)</h3>
+
+<p>Finalmente, instalamos Docker ejecutando el siguiente comando:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>yum <span class="nb">install </span>docker-ce
+</code></pre></div></div>
+
+<h3 id="paso-5-administrar-el-servicio-de-docker">Paso 5: Administrar el servicio de Docker</h3>
+
+<p>Aunque hayamos instalado Docker, todavía no se está ejecutando. Tenemos que configurarlo ejecutando los siguientes comandos:</p>
+
+<ul>
+  <li>Habilitamos que el servicio inicie con el arranque del servidor:</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>systemctl <span class="nb">enable </span>docker
+</code></pre></div></div>
+
+<ul>
+  <li>Iniciamos el servicio de Docker para que empiece a funcionar:</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>systemctl start docker
+</code></pre></div></div>
+
+<ul>
+  <li>Comprobamos que el servicio está iniciado:</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>systemctl status docker
+</code></pre></div></div>
+
+<p>Nos debería aparecer una línea verde que indica que el servicio está en funcionamiento.</p>
+
+<h3 id="paso-6-trabajando-con-docker">Paso 6: Trabajando con Docker</h3>
+
+<p>En entornos de laboratorio se suele utilizar el usuario root para poder trabajar comodamente, pero una buena práctica es darle permisos a un usuario que no sea root sobre el grupo docker. Si estáis usando el usuario al que habéis dado permisos, tenéis que reiniciar la sesión.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>usermod <span class="nt">-aG</span> docker &lt;usuario&gt;
+</code></pre></div></div>
+
+<p>Una vez hecho esto, vamos a comprobar que Docker funciona correctamente.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run hello-world
+</code></pre></div></div>
+
+<p>Con este comando, descargaremos el contenedor <em>hello-world</em> y lo ejecutaremos una vez haya terminado. Si todo ha funcionado correctamente, nos aparecerá el siguiente mensaje:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+    (amd64)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
+Share images, automate workflows, and more with a free Docker ID:
+ https://hub.docker.com/
+
+For more examples and ideas, visit:
+ https://docs.docker.com/get-started/
+</code></pre></div></div>
+
+<p>En siguientes posts explicaremos más apartados de Docker, como qué son las imagenes, cómo crearlos con Dockerfiles, descargarnos imagenes sin ejecutarlas o acceder a los mismos con una consola interactiva.</p>
+
+<p>Espero que os haya gustado y os haya servido de ayuda. ¡Hasta la próxima!</p>
+:ET
