@@ -1,0 +1,9 @@
+I"�<p>Para hacer esta web, utilicé Jekyll, un generador de sitios web estáticos que permite crear cada página web a partir de un fichero Markdown. Para que sea mucho más comodo utilizarlo, usaremos Docker para que sea sólo usar un contenedor y no tener que instalar más cosas en nuestros equipos.</p>
+
+<h2 id="crear-sitio-web">Crear sitio web</h2>
+
+<p>Ejecutaremos el siguiente comando para que Docker cree el contenedor y ejecute dentro del mismo el comando que utiliza Jekyll para generar lo que vendrá a ser nuestro blog.</p>
+
+<div class="language-zsh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">echo </span>Hola Mundo
+</code></pre></div></div>
+:ET

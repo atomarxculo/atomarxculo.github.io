@@ -1,0 +1,2 @@
+I"4<p>En esta ocasión, vamos a configurar Rsyslog para que recolecte cualquier log que le indiquemos. Esto es muy útil si tenemos un aplicación propia que genere logs o cualquier otra aplicación como puede ser Tomcat, por ejemplo, además de ser fácil de implementar (una vez te has peleado con ello).</p>
+:ET

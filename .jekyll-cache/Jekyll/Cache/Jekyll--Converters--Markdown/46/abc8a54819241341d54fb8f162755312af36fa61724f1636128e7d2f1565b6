@@ -1,0 +1,37 @@
+I"�
+<p>Para hacer esta web, utilicé Jekyll, un generador de sitios web estáticos que permite crear cada página web a partir de un fichero Markdown. Para que sea mucho más comodo utilizarlo, usaremos Docker para que sea sólo usar un contenedor y no tener que instalar más cosas en nuestros equipos.</p>
+
+<h2 id="crear-sitio-web">Crear sitio web</h2>
+
+<p>Ejecutaremos el siguiente comando para que Docker cree el contenedor y ejecute dentro del mismo el comando que utiliza Jekyll para generar lo que vendrá a ser nuestro blog.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">export </span><span class="nv">blog_name</span><span class="o">=</span><span class="s2">"blog-test"</span>
+docker run <span class="nt">--rm</span> <span class="nt">--volume</span> <span class="s2">"</span><span class="nv">$PWD</span><span class="s2">:/srv/jekyll"</span> <span class="nt">-it</span> jekyll/jekyll jekyll new <span class="nv">$blog_name</span> <span class="o">&amp;&amp;</span> <span class="nb">cd</span> <span class="nv">$blog_name</span>
+</code></pre></div></div>
+<blockquote>
+  <p>El parámetro <code class="language-plaintext highlighter-rouge">--rm</code> indica que una vez se ejecuta el contenedor, tiene que eliminarlo. Con <code class="language-plaintext highlighter-rouge">-it</code> permite generar una pseudo-terminal, lo que posibilita ejecutar comandos mientras el contenedor se ejecuta.</p>
+</blockquote>
+
+<p>Nos habrá creado la siguiente estructura de directorios.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>blog-test
+    ├── 404.html
+    ├── about.markdown
+    ├── _config.yml
+    ├── Gemfile
+    ├── index.markdown
+    └── _posts
+        └── 2023-01-22-welcome-to-jekyll.markdown
+</code></pre></div></div>
+
+<h2 id="construir-sitio-web">Construir sitio web</h2>
+
+<p>Con esto ya habremos creado nuestro blog, ahora queda construirlo para que Jekyll genere los ficheros necesarios para una vez levantemos el servidor, podamos ver la página como queremos, con sus imagenes y su CSS.</p>
+
+<p>Para ello, tendremos que ejecutar el siguiente comando.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run <span class="nt">--rm</span> <span class="nt">--volume</span> <span class="s2">"</span><span class="nv">$PWD</span><span class="s2">:/srv/jekyll"</span> <span class="nt">-it</span> jekyll/jekyll jekyll build
+</code></pre></div></div>
+
+<p>Esto habrá generado una carpeta llamada <code class="language-plaintext highlighter-rouge">_site</code> dentro de nuestro directorio.</p>
+:ET
