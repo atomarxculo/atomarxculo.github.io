@@ -88,7 +88,7 @@ docker run hello-world
 
 Con este comando, descargaremos el contenedor _hello-world_ y lo ejecutaremos una vez haya terminado. Si todo ha funcionado correctamente, nos aparecerá el siguiente mensaje:
 
-```text
+```conf
 Hello from Docker!
 This message shows that your installation appears to be working correctly.
 

@@ -28,7 +28,7 @@ Una vez descargada, comprobamos si el hash del fichero descargado corresponde co
 Para comprobarlo lo haremos de las siguientes maneras dependiendo del sistema operativo.
 
 * Windows. Desde una consola de powershell, iremos al directorio donde hemos descargado el fichero y ejecutaremos el siguiente comando:
-```cmd
+```powershell
 Get-FileHash <fichero>
 ```
 
@@ -78,19 +78,14 @@ yum update
 ```bash
 yum install <nombre_paquete>
 ```
-
-Por ejemplo, podemos instalar el editor de texto `vim`.
-```bash
-yum install vim
-```
-
 * Eliminar:
 ```bash
 yum remove <nombre_paquete>
 ```
 
-Por ejemplo, podemos eliminar el paquete que acabamos de instalar.
+Por ejemplo, podemos instalar el editor de texto `vim` y después eliminarlo de la siguiente manera.
 ```bash
+yum install vim
 yum remove vim
 ```
 
@@ -105,7 +100,7 @@ En la [Wiki de CentOS][wikicentos] te indican cómo activarlo.
 
 Para ello hay que ejecutar lo siguiente:
 
-```text
+```conf
 cat > /etc/yum.repos.d/epel.repo << EOF
 [epel]
 name=Epel rebuild for armhfp

@@ -14,7 +14,7 @@ En el post anterior, configuramos un servidor rsyslog para centralizar todos los
 
 Primero vamos a crear un fichero de configuración que recolecte todos los logs del demonio de Docker. Para ello crearemos el fichero `/etc/rsyslog.d/docker-daemon.log` en el servidor rsyslog con el siguiente contenido:
 
-```text
+```conf
 $template DockerLogs, "/var/log/docker/daemon.log"
 
 if $programname startswith 'dockerd' then -?DockerLogs
@@ -26,7 +26,7 @@ Con esto haremos que todo log que empiece por _dockerd_ se guarde en la ruta def
 
 Ahora, crearemos el fichero de configuración para los logs de los contenedores, esto también se hará en el servidor rsyslog. El nombre del fichero será `/etc/rsyslog.d/docker-containers.log` y tendrá lo siguiente:
 
-```text
+```conf
 $template DockerContainerLogs,"/var/log/docker/%hostname%_%syslogtag:R,ERE,1,ZERO:.*container_name/([^\[]+)--end%.log"
 
 if $syslogtag contains 'container_name'  then -?DockerContainerLogs

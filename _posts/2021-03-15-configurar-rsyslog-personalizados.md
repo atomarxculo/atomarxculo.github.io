@@ -20,7 +20,7 @@ Antes de crear el fichero, tenemos que crear el directorio de trabajo para rsysl
 
 Creamos un fichero llamado `<aplicacion>.conf`, podéis ponerle el nombre que queráis, dentro de `/etc/rsyslog.d/` con el siguiente contenido:
 
-```text
+```conf
 $ModLoad imfile
 $InputFilePollInterval 10
 $WorkDirectory /var/spool/rsyslog

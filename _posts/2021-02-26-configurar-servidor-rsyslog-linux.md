@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Configurar Rsyslog central en Linux
+title: Configurar servidor Rsyslog en Linux
 date: 2021-02-22 11:15:00 +0200
 description: Los logs es una parte muy importante en el día a día de nuestro trabajo como sysadmin, pero tener que revisar muchos de estos puede llegar a ser una locura. # Add post description (optional)
 img: rsyslog-logo.png # Add image post (optional)
@@ -18,28 +18,30 @@ Por eso hoy os contaré la forma de configurar una forma centralizada de recogid
 
 Rsyslog es un paquete preinstalado en los sistemas Linux, pero en caso de no tenerlo instalado, podemos obtenerlo de la siguiente manera
 
-`yum update -y; yum install rsyslog -y # CentOS 7`  
-`apt update -y; apt install rsyslog -y # Ubuntu`
+```bash
+yum update -y; yum install rsyslog -y # CentOS 7
+apt update -y; apt install rsyslog -y # Ubuntu
+```
 
 Editamos el fichero `/etc/rsyslog.conf` para configurar que la máquina actúe como servidor.
 
 Descomentamos las siguientes líneas para activar el protocolo UDP y el puerto 514, este último se puede cambiar por otro de nuestra elección.
 
-```text
+```conf
 $ModLoad imudp
 $UDPServerRun 514
 ```
 
 Para las conexiones TCP, debemos descomentar las siguientes líneas, e igual que el anterior, podemos poner un puerto a nuestra elección.
 
-```text
+```conf
 $ModLoad imudp
 InputTCPServerRun 514
 ```
 
 Configuramos una regla para que recoja todos los logs y los guarde en una carpeta con el nombre del host que se lo envía. Para tener una mejor organización y no trabajar sobre el fichero principal, crearemos un fichero `remotelogs.conf`, aunque se puede llamar como queramos siempre que acabe en `.conf` dentro de la carpeta `/etc/rsyslog.d/`
 
-```text
+```conf
 template(name="TmplLogRemoto" type="list") {
     constant(value="/var/log/rsyslog/")
     property(name="HOSTNAME")
@@ -60,7 +62,7 @@ Comprobamos que el servidor está a la escucha en los puertos indicados anterior
 
 Ahora tenemos que permitir las conexiones a esos puertos en firewalld.
 
-```text
+```bash
 firewall-cmd --permanent --add-port=514/udp
 firewall-cmd --permanent --add-port=514/tcp
 firewall-cmd --reload
@@ -82,7 +84,7 @@ En caso de no tenerlo instalado, hay que seguir los pasos indicados en la parte 
 
 Como en el caso anterior, para tener una mejor organización, crearemos un fichero en `/etc/rsyslog.d` llamado como queramos con la extensión `.conf`, en mi caso `clientlogs.conf`, y añadimos las siguientes líneas, sustituyendo por la IP del servidor que hemos configurado en el apartado `Target`.
 
-```text
+```conf
 action(type="omfwd"
 queue.type="LinkedList"
 queue.filename="queue_logs"

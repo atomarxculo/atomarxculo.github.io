@@ -24,13 +24,13 @@ Para poder seguir este tutorial, tenemos que tener actualizado Windows 10 a la v
 
 Para poder tener instalado WSL 2, debemos instalar antes la versión 1. Desde una consola de Powershell con permisos de administrador, ejecutamos el siguiente comando:
 
-```cmd
+```powershell
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
 ```
 
 Además tenemos que instalar la característica "Virtual Machine Platform" o su nombre en español "Plataforma de máquina virtual".
 
-```cmd
+```powershell
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 ```
 
@@ -42,13 +42,13 @@ En caso de tener ya instalado WSL 1, estos pasos pueden que nos den error. Para 
 
 Por defecto nuestro sistema utilizará WSL 1, por lo que tenemos que cambiar dicha configuración para que utilice la versión 2. Ejecutamos el siguiente comando en la consola de Powershell.
 
-```cmd
+```powershell
 wsl --set-default-version 2
 ```
 
 Para comprobar las distribuciones que tenemos instaladas, podemos hacerlo con el siguiente comando.
 
-```cmd
+```powershell
 wsl -l -v
 ```
 
@@ -60,7 +60,7 @@ Ahora que el equipo haya arrancado e iniciemos Docker Desktop, nos aparecerá un
 
 Para comprobar que todo ha ido bien, abrimos una consola de Powershell y ejecutamos la imagen hello-world como la anterior vez.
 
-```cmd
+```powershell
 docker run hello-world
 ```
 

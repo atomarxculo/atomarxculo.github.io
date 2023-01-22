@@ -50,7 +50,7 @@ El resultado del comando será parecido a lo que muestro a continuación. En mi 
 `lo` es la interfaz de *loopback*, donde está configurado la IP *127.0.0.1* o localhost.  
 `wlan0` es la interfaz de conexión inalámbrica, para ir por Wi-FI.
 
-```plaintext
+```conf
 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
     link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
     inet 127.0.0.1/8 scope host lo
@@ -79,7 +79,7 @@ vi /etc/sysconfig/network-scripts/ifcfg-eth0
 
 El contenido que tenemos que poner en el fichero.
 
-```plaintext
+```conf
 # MAC de la interfaz #
 HWADDR=dc:a6:32:a3:a8:b4
 TYPE=Ethernet
