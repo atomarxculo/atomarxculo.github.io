@@ -22,7 +22,7 @@ Con `fdisk -l` veremos si se ha ampliado el disco. Ahora crearemos la partición
 Utilizando el comando `cfdisk /dev/<disco>` nos aparecerá un menú para poder hacer la configuración:  
 _En este caso lo haremos sobre el disco /dev/sda, que tenía 24GB y le he aumentado en 1GB._
 
-![cfdisk](..\assets\img\cfdisk.png)
+![cfdisk](..\assets\img\posts\cfdisk.png)
 
 1. Seleccionamos _New_, elegimos el tamaño que queremos que tenga dicha partición y si va a ser _primary_ o _logical_, yo recomiendo que si vamos a ampliar varias veces el disco, escojamos _logical_ ya que la otra opción permite crear pocas.
 2. Seleccionamos _Type_ y elegimos _Linux LVM_ o escribimos el código _8E_.
