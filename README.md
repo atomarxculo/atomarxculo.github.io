@@ -4,6 +4,7 @@ Blog donde iré subiendo las cosas que he aprendido e iré aprendiendo en el mun
 
 Posibles futuros posts:
 - Desplegar Jenkins
+- Instalar Haproxy y configuración básica
 - Configurar backup Jenkins
 - Crear job jenkins que se le pueda llamar mediante curl y token
 - Configurar Webhook Gitlab/Jenkins
