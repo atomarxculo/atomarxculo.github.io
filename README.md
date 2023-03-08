@@ -19,6 +19,11 @@ Posibles futuros posts:
 - Instalación Opensearch (un sólo nodo)
 - Instalación Opensearch (cluster 3 nodos)
 - Configuración en Opensearch para rotado de indices
+- Instalar cluster Kubernetes (1 master y 2 workers)
+- Configurar Nginx Ingress Controller
+- Configurar MetalLB y que vaya a través de haproxy
+- Kubernetes Dashboard a través de Nginx
+- Instalar Keycloak
 
 
 Template Web: [Flexible Jekyll](https://github.com/artemsheludko/flexible-jekyll)
