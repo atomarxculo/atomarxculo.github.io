@@ -9,7 +9,6 @@ Posibles futuros posts:
 - Crear job jenkins que se le pueda llamar mediante curl y token
 - Configurar Webhook Gitlab/Jenkins
 - Instalar ansible en Ubuntu y/o usar imagen Docker
-- Configurar catalina.out Tomcat9
 - Instalar Active Directory en Windows Serve 2019
 - Instalar FreeIPA Server en Ubuntu
 - Añadir clientes a FreeIPA
