@@ -5,7 +5,7 @@ date: 2023-03-18 12:00:00 +0000
 description: Configurar HTTPS para cifrar comunicaciones es algo muy importante
 img: sysadmin.jpg # Add image post (optional)
 fig-caption: # Add figcaption (optional)
-tags: [linux, centos, ubuntu, blog]
+tags: [linux, centos, ubuntu]
 ---
 
 Configurar HTTPS para cifrar comunicaciones es algo muy importante y con esta herramienta podremos conseguir nuestros propios certificados firmados y gratuitos. [Let's Encrypt][letsencrypt] para quien no lo sepa, es una CA (Autoridad certificadora) gratuita, automatizada y abierta que nos permite crear lo comentado anteriormente.

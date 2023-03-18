@@ -5,7 +5,7 @@ date: 2023-02-27 16:30:00 +0200
 description: Donde trabajo estamos migrando los servidores con Tomcat 8 a Tomcat 9 y al reiniciar el servidor por completo, nos encontramos con esto.
 img: tomcat-server.png # Add image post (optional)
 fig-caption: # Add figcaption (optional)
-tags: [ubuntu, tomcat, blog]
+tags: [tomcat, linux]
 ---
 
 Donde trabajo estamos migrando los servidores con Tomcat 8 a Tomcat 9 y al reiniciar el servidor por completo, nos encontramos con esto, que el servicio no se levanta automaticamente, pero si lo inicias mediante un `systemctl restart tomcat9`, levanta sin problemas. Para dar más detalles, esto me ocurrió en Ubuntu, con la versión de Tomcat 9 instalada por repositorio.
