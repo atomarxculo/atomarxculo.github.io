@@ -2,13 +2,13 @@
 layout: post
 title: Instalar Let's Encrypt en CentOS 7 y Ubuntu 20.04
 date: 2023-03-18 12:00:00 +0000
-description: Como he venido diciendo en anteriores posts, configurar HTTPS para cifrar comunicaciones es algo muy importante y con esto
+description: Configurar HTTPS para cifrar comunicaciones es algo muy importante
 img: sysadmin.jpg # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: [linux, centos, ubuntu, blog]
 ---
 
-Como he venido diciendo en anteriores posts, configurar HTTPS para cifrar comunicaciones es algo muy importante y con esta herramienta podremos conseguir nuestros propios certificados firmados y gratuitos.
+Configurar HTTPS para cifrar comunicaciones es algo muy importante y con esta herramienta podremos conseguir nuestros propios certificados firmados y gratuitos. [Let's Encrypt][letsencrypt] para quien no lo sepa, es una CA (Autoridad certificadora) gratuita, automatizada y abierta que nos permite crear lo comentado anteriormente.
 
 **Importante, esto sólo es válido si tenemos un dominio público para que Let's Encrypt pueda comprobar nuestra identidad y un registro DNS publicado, no funciona si queremos trabajar con localhost.**
 
@@ -78,5 +78,6 @@ Y como último, no olvidar configurar que los certificados se renueven automáti
 Esto ejecutará la tarea todos los días a las 5 de la mañana.
 
 [wikicentos]: https://wiki.centos.org/SpecialInterestGroup/AltArch/armhfp#How_Can_I_Enable_EPEL_7_on_armhfp_.3F
+[letsencrypt]: https://letsencrypt.org/es/
 
 Espero que os haya gustado y os haya servido de ayuda. ¡Hasta la próxima!
