@@ -2,13 +2,13 @@
 layout: post
 title: Configurar HTTPS en Tomcat
 date: 2023-02-28 18:00:00 +0000
-description: En el articulo anterior hablé de un error al intentar arrancar Tomcat9 y caí en que podría hablar de cómo configurar HTTPS en este servicio.
+description: En el artículo anterior hablé de un error al intentar arrancar Tomcat9 y caí en que podría hablar de cómo configurar HTTPS en este servicio.
 img: tomcat-server.png # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: [linux, tomcat, https]
 ---
 
-En el articulo anterior hablé de un error al intentar arrancar Tomcat9 y caí en que podría hablar de cómo configurar HTTPS en este servicio. Usaremos certificados PEM, en vez de JKS, ya que pienso que es más comodo al no tener que generar dicho fichero para esto y que la contraseña se tiene que dejar en el fichero de configuración en texto plano.
+En el artículo anterior hablé de un error al intentar arrancar Tomcat9 y caí en que podría hablar de cómo configurar HTTPS en este servicio. Usaremos certificados PEM, en vez de JKS, ya que pienso que es más comodo al no tener que generar dicho fichero para esto y que la contraseña se tiene que dejar en el fichero de configuración en texto plano.
 
 ## Configuración
 

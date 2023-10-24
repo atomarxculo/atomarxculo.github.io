@@ -18,6 +18,7 @@ Ejecutaremos el siguiente comando para que Docker cree el contenedor y ejecute d
 export blog_name="blog-test"
 docker run --rm --volume "$PWD:/srv/jekyll" -it jekyll/jekyll jekyll new $blog_name && cd $blog_name
 ```
+
 > El parámetro `--rm` indica que una vez se ejecuta el contenedor, tiene que eliminarlo. Con `-it` permite generar una pseudo-terminal, lo que posibilita ejecutar comandos mientras el contenedor se ejecuta.
 
 Nos habrá creado la siguiente estructura de directorios.
@@ -55,7 +56,7 @@ Así levantaremos el servidor web para ver la página.
 docker run --rm --name blog --volume "$PWD:/srv/jekyll" -p 4000:4000 -it jekyll/jekyll jekyll serve
 ```
 
-Para mostrarla, tendremos que abrir en el navegador la siguiente dirección, http://localhost:4000. Mientras el servidor esté arrancado, cada vez que hagamos un cambio en los ficheros, con actualizar la página del navegador valdrá para ver el cambio.
+Para mostrarla, tendremos que abrir en el navegador la siguiente dirección, <http://localhost:4000>. Mientras el servidor esté arrancado, cada vez que hagamos un cambio en los ficheros, con actualizar la página del navegador valdrá para ver el cambio.
 
 Para acabar con el contenedor, valdrá con pulsar `ctrl-c` para que termine el proceso. Cada vez que queremos levantar el servidor, con volver a ejecutar el anterior comando, lo tendremos listo.
 
