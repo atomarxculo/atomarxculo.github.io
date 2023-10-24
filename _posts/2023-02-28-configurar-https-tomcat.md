@@ -29,6 +29,7 @@ Hay que descomentar y configurar la ruta de los certificados del siguiente bloqu
 ```
 
 Los certificados tienen que tener ciertos permisos para que Tomcat pueda trabajar con ellos, pero que no sea accesible para cualquiera.
+
 - La clave pública puede tener permisos 644 y que el propietario sea root.
 - La clave privada tenemos que ponerle permisos 400 tanto al usuario root como al usuario tomcat. Para configurar que otro usuario tenga permisos sobre un fichero, podemos configurarlo con el comando `sudo setfacl -m u:tomcat:4 private_key.key`
 
