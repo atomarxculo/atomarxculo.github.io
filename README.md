@@ -3,6 +3,7 @@
 Blog donde iré subiendo las cosas que he aprendido e iré aprendiendo en el mundo de sysadmin.
 
 Posibles futuros posts:
+
 - Desplegar Jenkins
 - Instalar Haproxy y configuración básica
 - Configurar backup Jenkins
@@ -10,9 +11,9 @@ Posibles futuros posts:
 - Configurar Webhook Gitlab/Jenkins
 - Instalar ansible en Ubuntu y/o usar imagen Docker
 - Instalar Active Directory en Windows Serve 2019
-- Instalar FreeIPA Server en Ubuntu
+- Instalar FreeIPA Server
 - Añadir clientes a FreeIPA
-- Instalación Barman y configuración
+- ~~Instalación Barman y configuración~~
 - Configuración de HTTPS para varios servicios
 - Instalación Kafka/Kraft
 - Instalación Opensearch (un sólo nodo)
@@ -23,6 +24,9 @@ Posibles futuros posts:
 - Configurar MetalLB y que vaya a través de haproxy
 - Kubernetes Dashboard a través de Nginx
 - Instalar Keycloak
-
+- Instalar Patroni
+- Despliegue de un cluster de Nomad
+- Despliegue de un cluster de Consul
+- Integración componentes Hashicorp
 
 Template Web: [Flexible Jekyll](https://github.com/artemsheludko/flexible-jekyll)
