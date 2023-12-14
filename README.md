@@ -10,8 +10,8 @@ Posibles futuros posts:
 - Crear job jenkins que se le pueda llamar mediante curl y token
 - Configurar Webhook Gitlab/Jenkins
 - Instalar ansible en Ubuntu y/o usar imagen Docker
-- Instalar Active Directory en Windows Serve 2019
-- Instalar FreeIPA Server
+- Instalar Active Directory en Windows Server 2019
+- ~~Instalar FreeIPA Server~~
 - Añadir clientes a FreeIPA
 - ~~Instalación Barman y configuración~~
 - Configuración de HTTPS para varios servicios
@@ -24,7 +24,7 @@ Posibles futuros posts:
 - Configurar MetalLB y que vaya a través de haproxy
 - Kubernetes Dashboard a través de Nginx
 - Instalar Keycloak
-- Instalar Patroni
+- ~~Instalar Patroni~~
 - Despliegue de un cluster de Nomad
 - Despliegue de un cluster de Consul
 - Integración componentes Hashicorp
