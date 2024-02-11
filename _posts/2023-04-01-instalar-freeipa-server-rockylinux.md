@@ -79,7 +79,8 @@ Añadir que se puede configurar un CA externo, pero si no se especifica, FreeIPA
 Si tenemos firewalld ejecutándose en nuestro sistema, tendremos que abrir los puertos necesarios para poder acceder:
 
 ```bash
-sudo firewall-cmd --add-service=freeipa-4 --permanent
+sudo firewall-cmd --add-service={freeipa-4,dns,ntp} --permanent
+sudo firewall-cmd --add-port={88/udp,464/udp,464/tcp} --permanent
 sudo firewall-cmd --reload
 ```
 

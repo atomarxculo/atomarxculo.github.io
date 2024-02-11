@@ -16,7 +16,7 @@ Para empezar, nos iremos al **Explorador de archivos** en Windows 10 y a la ruta
 
 ![explorador](..\assets\img\posts\powershell.png)
 
-Ejecutamos el siguiente comando y así obtendremos el hash del fichero, en este caso en _SHA256_, donde <fichero> es el fichero que queremos comprobar.
+Ejecutamos el siguiente comando y así obtendremos el hash del fichero, en este caso en _SHA256_, donde `<fichero>` es el fichero que queremos comprobar.
 
 ```powershell
 Get-FileHash -Algorithm SHA256 <fichero>
