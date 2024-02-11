@@ -15,11 +15,13 @@ He elegido [Rocky Linux 9][rockylinux] por dos motivos, para Ubuntu sólo hay ha
 ## Prerequisitos
 
 Primero que todo vamos a actualizar los repositorios y paquetes del servidor que hayamos desplegado para ello con el siguiente comando:
+
 ```bash
 sudo dnf update -y
 ```
 
 Ahora vamos a asegurarnos que la fecha y la hora está bien, además de configurar el nombre del servidor, que tenga una [IP estática][ipestatica]. En el ejemplo he puesto los datos de mi servidor, pero vosotros tendréis que cambiar la IP y el nombre para que corresponda con el vuestro.
+
 ```bash
 # Cambiar la zona horaria
 sudo timedatectl set-timezone Europe/Madrid
@@ -47,6 +49,7 @@ Una vez terminado, vamos a configurarlo.
 ## Configuración FreeIPA Server
 
 Para instalarlo podríamos simplemente ejecutar el comando `ipa-server-install` e ir rellenando los datos que nos vayan pidiendo, pero para hacerlo más cómodo vamos a ponerle los siguientes parametros para que lo configure de una sola vez.
+
 ```bash
 sudo ipa-server-install --ip-address=192.168.122.11 \
 --realm SAMURANTECH.LOCAL \
@@ -59,20 +62,22 @@ sudo ipa-server-install --ip-address=192.168.122.11 \
 ```
 
 Ahora os explicaré que significa cada parametro:
- - `--ip-address` Selecciona la IP por dónde queremos que el servidor levante los servicios, si tienes varias IPs en un mismo servidor como es mi caso, es mejor especificar.
- - `--realm ` Cómo queremos que se llame nuestro dominio de Kerberos, lo recomiendo poner en mayúsculas.
- - `--ds-password` La contraseña del Directory Server para el usuario del Directory Manager. Tiene que tener un mínimo de 8 caracteres.
- - `--admin-password` La contraseña del usuario administrador. Tiene que tener un mínimo de 8 caracteres.
- - `--setup-dns` Para configurar el servidor DNS según hace la configuración.
- - `--auto-reverse` Para que cree automáticamente la zona reversa DNS con sus registros PTR.
- - `--forwarder` Configurar el reenviador DNS.
- - `--unattended` Para que no tenga que pedirnos interactuar con la instalación, que lo haga automáticamente.
+
+- `--ip-address` Selecciona la IP por dónde queremos que el servidor levante los servicios, si tienes varias IPs en un mismo servidor como es mi caso, es mejor especificar.
+- `--realm` Cómo queremos que se llame nuestro dominio de Kerberos, lo recomiendo poner en mayúsculas.
+- `--ds-password` La contraseña del Directory Server para el usuario del Directory Manager. Tiene que tener un mínimo de 8 caracteres.
+- `--admin-password` La contraseña del usuario administrador. Tiene que tener un mínimo de 8 caracteres.
+- `--setup-dns` Para configurar el servidor DNS según hace la configuración.
+- `--auto-reverse` Para que cree automáticamente la zona reversa DNS con sus registros PTR.
+- `--forwarder` Configurar el reenviador DNS.
+- `--unattended` Para que no tenga que pedirnos interactuar con la instalación, que lo haga automáticamente.
 
 Añadir que se puede configurar un CA externo, pero si no se especifica, FreeIPA crea uno propio.
 
 > Si os da un error con IPv6 como fue mi caso, tenemos que añadir/modificar en el fichero `/etc/sysctl.conf` la línea `net.ipv6.conf.all.disable_ipv6 = 0` (si veis un 1, hay que poner un 0) y ejecutar `sudo sysctl -p` para que aplique los cambios sin tener que reiniciar el servidor.
 
 Si tenemos firewalld ejecutándose en nuestro sistema, tendremos que abrir los puertos necesarios para poder acceder:
+
 ```bash
 sudo firewall-cmd --add-service=freeipa-4 --permanent
 sudo firewall-cmd --reload
@@ -83,6 +88,7 @@ El servicio `freeipa-4` tiene incluido todos los puertos necesarios como HTTPS, 
 ## Comprobar que el servicio funciona
 
 Verificamos que los servicios de IPA están corriendo:
+
 ```bash
 [samuel@freeipa-server1 ~]$ sudo ipactl status
 Directory Service: RUNNING
