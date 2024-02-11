@@ -12,7 +12,7 @@ Posibles futuros posts:
 - Instalar ansible en Ubuntu y/o usar imagen Docker
 - Instalar Active Directory en Windows Server 2019
 - ~~Instalar FreeIPA Server~~
-- Añadir clientes a FreeIPA
+- ~~Añadir clientes a FreeIPA~~
 - ~~Instalación Barman y configuración~~
 - Configuración de HTTPS para varios servicios
 - Instalación Kafka/Kraft
