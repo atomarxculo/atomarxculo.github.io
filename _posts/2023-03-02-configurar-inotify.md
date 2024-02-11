@@ -23,7 +23,7 @@ inotifywait -m /home/test/in -e close_write -e moved_to |
     done
 ```
 
-El inotify se queda escuchando en el directorio `home/test/in` a la espera de un nuevo fichero y cuando termina de copiarse uno con la extensión indicada, en este caso .csv, llama al job de jenkins que hayamos definido (los próximos articulos meteremos mano a Jenkins), pasándole como parametro la ruta y el nombre del fichero. Se le pasa también como variables el token para la ejecución del job en un fichero externo, el cual se guarda en el fichero `/etc/scripts/.variables`
+El inotify se queda escuchando en el directorio `home/test/in` a la espera de un nuevo fichero y cuando termina de copiarse uno con la extensión indicada, en este caso .csv, llama al job de jenkins que hayamos definido (los próximos artículos meteremos mano a Jenkins), pasándole como parametro la ruta y el nombre del fichero. Se le pasa también como variables el token para la ejecución del job en un fichero externo, el cual se guarda en el fichero `/etc/scripts/.variables`
 
 Vamos a guardar el script anterior en un fichero, darle permisos de ejecución con `chmod +x <fichero_script>.sh` y crearemos un servicio para que se quede ejecutando en segundo plano y arranque junto al sistema.
 

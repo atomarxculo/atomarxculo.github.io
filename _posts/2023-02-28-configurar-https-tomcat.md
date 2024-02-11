@@ -2,13 +2,13 @@
 layout: post
 title: Configurar HTTPS en Tomcat
 date: 2023-02-28 18:00:00 +0000
-description: En el articulo anterior hablé de un error al intentar arrancar Tomcat9 y caí en que podría hablar de cómo configurar HTTPS en este servicio.
+description: En el artículo anterior hablé de un error al intentar arrancar Tomcat9 y caí en que podría hablar de cómo configurar HTTPS en este servicio.
 img: tomcat-server.png # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: [linux, tomcat, https]
 ---
 
-En el articulo anterior hablé de un error al intentar arrancar Tomcat9 y caí en que podría hablar de cómo configurar HTTPS en este servicio. Usaremos certificados PEM, en vez de JKS, ya que pienso que es más comodo al no tener que generar dicho fichero para esto y que la contraseña se tiene que dejar en el fichero de configuración en texto plano.
+En el artículo anterior hablé de un error al intentar arrancar Tomcat9 y caí en que podría hablar de cómo configurar HTTPS en este servicio. Usaremos certificados PEM, en vez de JKS, ya que pienso que es más comodo al no tener que generar dicho fichero para esto y que la contraseña se tiene que dejar en el fichero de configuración en texto plano.
 
 ## Configuración
 
@@ -29,6 +29,7 @@ Hay que descomentar y configurar la ruta de los certificados del siguiente bloqu
 ```
 
 Los certificados tienen que tener ciertos permisos para que Tomcat pueda trabajar con ellos, pero que no sea accesible para cualquiera.
+
 - La clave pública puede tener permisos 644 y que el propietario sea root.
 - La clave privada tenemos que ponerle permisos 400 tanto al usuario root como al usuario tomcat. Para configurar que otro usuario tenga permisos sobre un fichero, podemos configurarlo con el comando `sudo setfacl -m u:tomcat:4 private_key.key`
 
