@@ -103,7 +103,7 @@ Donde:
 
 Para mandar un custom log y realizar una prueba, si ejecutamos `logger <texto>`, mandará un log al servidor y comprobaremos si la comunicación se realiza correctamente.
 
-De esta manera, ya tendremos los logs de todos nuestros servidores en un único sitio y no tendremos que estar conectandonos en mil sitios distintos.
+De esta manera, ya tendremos los logs de todos nuestros servidores en un único sitio y no tendremos que estar conectándonos en mil sitios distintos.
 
 En posteriores posts tengo pensado explicar cómo podemos hacer que la comunicación entre servidor/cliente se haga bajo un certificado que cifre la información que se envía, crear templates en los clientes para aplicaciones como Docker, Tomcat y demás, además de desplegar Logstash, Elasticsearch o Kibana para poder trabajar con los logs de forma más visual.
 

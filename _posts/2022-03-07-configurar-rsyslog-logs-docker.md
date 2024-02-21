@@ -10,7 +10,7 @@ tags: [rsyslog, linux, docker]
 
 En el post anterior, configuramos un servidor rsyslog para centralizar todos los logs de nuestra infraestructura. En este, configuraremos tanto el servidor Docker que desplegamos para que envíe los logs al rsyslog, como el servidor rsyslog para que los recoja.
 
-## Configurar el servidor de rsyslog 
+## Configurar el servidor de rsyslog
 
 Primero vamos a crear un fichero de configuración que recolecte todos los logs del demonio de Docker. Para ello crearemos el fichero `/etc/rsyslog.d/docker-daemon.log` en el servidor rsyslog con el siguiente contenido:
 
@@ -52,6 +52,6 @@ Esto etiquetará a todos los contenedores con `container_name` y el nombre de di
 Reiniciamos el servicio de Docker para aplicar cambios:  
 `sudo systemctl restart docker`
 
-Con esto ya empezarán a llegar los logs de Docker y de los contenedores que ejecute, teniendo de esta forma una manera más comoda de poder visualizar que puede ocurrir con un contenedor y no tener que acceder a todos los servidores Docker que tengamos en busca de él.
+Con esto ya empezarán a llegar los logs de Docker y de los contenedores que ejecute, teniendo de esta forma una manera más cómoda de poder visualizar que puede ocurrir con un contenedor y no tener que acceder a todos los servidores Docker que tengamos en busca de él.
 
 Espero que os haya gustado y os haya servido de ayuda. ¡Hasta la próxima!

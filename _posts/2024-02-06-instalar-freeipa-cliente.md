@@ -38,7 +38,7 @@ El permiso que vamos a utilizar es `Host Administrators`.
 
 Ahora vamos a la parte de crear el usuario, por lo que iremos a la parte de `Identidad > Usuarios` para poder hacerlo, en mi caso llamaré al usuario `systemenrollment`, y rellenamos los datos que nos solicitan. También daremos a `Agregar y Editar` para añadir ya el rol al usuario, aunque se puede hacer después sin ningún problema pinchando sobre el nombre del usuario.
 
-Un consejo que os doy aquí es que pongáis una contraseña cualquiera, accedais con el usuario, ya que os pedirá cambiar la contraseña y ya ahí le ponéis la contraseña final que queráis.
+Un consejo que os doy aquí es que pongáis una contraseña cualquiera, accedáis con el usuario, ya que os pedirá cambiar la contraseña y ya ahí le ponéis la contraseña final que queráis.
 
 ![freeipa-ui](../assets/img/posts/freeipa-client_create-user.png)
 
@@ -84,7 +84,7 @@ sudo ipa-client-install --mkhomedir --enable-dns-update --principal=systemenroll
 
 >`<PASSWORD>` es la contraseña que habéis puesto para dicho usuario.
 
-Ahora os explicaré que significa cada parametro:
+Ahora os explicaré que significa cada parámetro:
 
 - `--mkhomedir` Crea la carpeta `/home/` para los usuarios que inician sesión por primera vez.
 - `--enable-dns-update` Permite que haga actualizaciones en el DNS cuando se detecta que la IP de la máquina cambie.

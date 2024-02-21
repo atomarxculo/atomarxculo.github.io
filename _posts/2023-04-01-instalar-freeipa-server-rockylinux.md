@@ -48,7 +48,7 @@ Una vez terminado, vamos a configurarlo.
 
 ## Configuración FreeIPA Server
 
-Para instalarlo podríamos simplemente ejecutar el comando `ipa-server-install` e ir rellenando los datos que nos vayan pidiendo, pero para hacerlo más cómodo vamos a ponerle los siguientes parametros para que lo configure de una sola vez.
+Para instalarlo podríamos simplemente ejecutar el comando `ipa-server-install` e ir rellenando los datos que nos vayan pidiendo, pero para hacerlo más cómodo vamos a ponerle los siguientes parámetros para que lo configure de una sola vez.
 
 ```bash
 sudo ipa-server-install --ip-address=192.168.122.11 \
@@ -61,7 +61,7 @@ sudo ipa-server-install --ip-address=192.168.122.11 \
 --unattended
 ```
 
-Ahora os explicaré que significa cada parametro:
+Ahora os explicaré que significa cada parámetro:
 
 - `--ip-address` Selecciona la IP por dónde queremos que el servidor levante los servicios, si tienes varias IPs en un mismo servidor como es mi caso, es mejor especificar.
 - `--realm` Cómo queremos que se llame nuestro dominio de Kerberos, lo recomiendo poner en mayúsculas.

@@ -7,9 +7,9 @@ Posibles futuros posts:
 - Desplegar Jenkins
 - Instalar Haproxy y configuración básica
 - Configurar backup Jenkins
-- Crear job jenkins que se le pueda llamar mediante curl y token
-- Configurar Webhook Gitlab/Jenkins
-- Instalar ansible en Ubuntu y/o usar imagen Docker
+- Crear job Jenkins que se le pueda llamar mediante curl y token
+- Configurar Webhook GitLab/Jenkins
+- Instalar Ansible en Ubuntu y/o usar imagen Docker
 - Instalar Active Directory en Windows Server 2019
 - ~~Instalar FreeIPA Server~~
 - ~~Añadir clientes a FreeIPA~~
@@ -27,6 +27,6 @@ Posibles futuros posts:
 - ~~Instalar Patroni~~
 - Despliegue de un cluster de Nomad
 - Despliegue de un cluster de Consul
-- Integración componentes Hashicorp
+- Integración componentes HashiCorp
 
 Template Web: [Flexible Jekyll](https://github.com/artemsheludko/flexible-jekyll)

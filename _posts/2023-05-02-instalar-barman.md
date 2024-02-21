@@ -45,7 +45,7 @@ sudo su barman
 ssh-keygen -t rsa
 ```
 
-De esta forma, no tendremos que estar cambiando la contraseña del usuario **barman**. En el segundo comando, damos siguiente a todo y nos habrá creado el par de claves. Para pasarlos al otro servidor, podemos ejecutar el comando `ssh-copy-id` pero en ocasiones no tenemos la contraseña del usuario postgres, así que yo lo haré a mano, copiando el contenido del fichero `/var/lib/barman/.ssh/id_rsa.pub` y dejandolo en el fichero `authorized_keys` que crearemos cuando configuremos la parte de postgres.
+De esta forma, no tendremos que estar cambiando la contraseña del usuario **barman**. En el segundo comando, damos siguiente a todo y nos habrá creado el par de claves. Para pasarlos al otro servidor, podemos ejecutar el comando `ssh-copy-id` pero en ocasiones no tenemos la contraseña del usuario postgres, así que yo lo haré a mano, copiando el contenido del fichero `/var/lib/barman/.ssh/id_rsa.pub` y dejándolo en el fichero `authorized_keys` que crearemos cuando configuremos la parte de postgres.
 
 ### Autenticación sin contraseña en PostgreSQL
 
@@ -76,7 +76,7 @@ postgres=# create user barman superuser password 'barman';
 
 En este apartado vamos a cambiar tanto el fichero general de Barman, como el fichero que hay que crear para la conexión al servidor PostgreSQL.
 
-En el fichero de configuración `/etc/barman.conf`, vamos a añadir las siguientes líneas, ya sea agregandolas o descomentando las que ya hay.
+En el fichero de configuración `/etc/barman.conf`, vamos a añadir las siguientes líneas, ya sea agregándolas o descomentando las que ya hay.
 
 ```conf
 barman_home = /var/lib/barman # Aquí definimos dónde se guardan los backups
@@ -147,7 +147,7 @@ Con el siguiente comando comprobaremos la conexión, que en este punto nos dará
 
 ### Configurar envío WAL a servidor Barman
 
-Hay que modificar los siguientes parametros en el fichero de configuración `postgresql.conf` que se encuentra en el servidor PostgreSQL.
+Hay que modificar los siguientes parámetros en el fichero de configuración `postgresql.conf` que se encuentra en el servidor PostgreSQL.
 
 ```conf
 archive_mode = on # Prestar especial atención a este, porque si está con otro valor, habrá que reiniciar el servicio
@@ -166,7 +166,7 @@ Volvemos a ejecutar el comando `barman check postgres-test` para confirmar que v
 
 ### Configuración extra
 
-Para que Barman haga una comprobacion del estado de los servidores y se traiga los WALs que estos tengan, hay que hacer una configuración en Crontab del usuario **barman**.
+Para que Barman haga una comprobación del estado de los servidores y se traiga los WALs que estos tengan, hay que hacer una configuración en Crontab del usuario **barman**.
 
 ```bash
 sudo su barman

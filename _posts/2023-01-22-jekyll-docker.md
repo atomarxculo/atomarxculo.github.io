@@ -8,7 +8,7 @@ fig-caption: # Add figcaption (optional)
 tags: [docker, jekyll]
 ---
 
-Para hacer esta web, utilicé Jekyll, un generador de sitios web estáticos que permite crear cada página web a partir de un fichero Markdown. Para que sea mucho más comodo utilizarlo, usaremos Docker para que sea sólo usar un contenedor y no tener que instalar más cosas en nuestros equipos.
+Para hacer esta web, utilicé Jekyll, un generador de sitios web estáticos que permite crear cada página web a partir de un fichero Markdown. Para que sea mucho más cómodo utilizarlo, usaremos Docker para que sea sólo usar un contenedor y no tener que instalar más cosas en nuestros equipos.
 
 ## Crear sitio web
 
@@ -36,7 +36,7 @@ blog-test
 
 ## Construir sitio web
 
-Con esto ya habremos creado nuestro blog, ahora queda construirlo para que Jekyll genere los ficheros necesarios para una vez levantemos el servidor, podamos ver la página como queremos, con sus imagenes y su CSS.
+Con esto ya habremos creado nuestro blog, ahora queda construirlo para que Jekyll genere los ficheros necesarios para una vez levantemos el servidor, podamos ver la página como queremos, con sus imágenes y su CSS.
 
 Para ello, tendremos que ejecutar el siguiente comando.
 

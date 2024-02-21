@@ -28,14 +28,17 @@ Una vez descargada, comprobamos si el hash del fichero descargado corresponde co
 Para comprobarlo lo haremos de las siguientes maneras dependiendo del sistema operativo.
 
 * Windows. Desde una consola de powershell, iremos al directorio donde hemos descargado el fichero y ejecutaremos el siguiente comando:
+
 ```powershell
 Get-FileHash <fichero>
 ```
 
 * Linux. Desde la terminal, iremos al directorio donde hemos descargado el fichero y ejecutaremos el siguiente comando:
+
 ```bash
 sha256sum <fichero>
 ```
+
 En este caso usaremos este comando porque queremos obtener el hash SHA256.
 
 Obtenido el hash con el comando, ahora sólo es comparar con el que se muestra en la página. No me seáis cafres y con que comprobéis los primeros 6 dígitos y los 6 últimos valdría.
@@ -59,6 +62,7 @@ El usuario por defecto es `root`.
 La contraseña por defecto es `centos`.
 
 Es recomendable cambiar la contraseña, para ello ejecutamos el comando:
+
 ```bash
 passwd
 ```
@@ -70,20 +74,25 @@ Configuramos la zona horaria que corresponda con `timedatectl set-timezone Europ
 Ahora que hemos hecho esos cambios, vamos a actualizarla e instalar algún paquete. Para manejar los paquetes en CentOS, usamos el comando `yum`.
 
 * Actualizar:
+
 ```bash
 yum update
 ```
 
 * Instalar:
+
 ```bash
 yum install <nombre_paquete>
 ```
+
 * Eliminar:
+
 ```bash
 yum remove <nombre_paquete>
 ```
 
 Por ejemplo, podemos instalar el editor de texto `vim` y después eliminarlo de la siguiente manera.
+
 ```bash
 yum install vim
 yum remove vim

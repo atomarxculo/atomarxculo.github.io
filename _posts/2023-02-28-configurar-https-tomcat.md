@@ -8,11 +8,11 @@ fig-caption: # Add figcaption (optional)
 tags: [linux, tomcat, https]
 ---
 
-En el artículo anterior hablé de un error al intentar arrancar Tomcat9 y caí en que podría hablar de cómo configurar HTTPS en este servicio. Usaremos certificados PEM, en vez de JKS, ya que pienso que es más comodo al no tener que generar dicho fichero para esto y que la contraseña se tiene que dejar en el fichero de configuración en texto plano.
+En el artículo anterior hablé de un error al intentar arrancar Tomcat9 y caí en que podría hablar de cómo configurar HTTPS en este servicio. Usaremos certificados PEM, en vez de JKS, ya que pienso que es más cómodo al no tener que generar dicho fichero para esto y que la contraseña se tiene que dejar en el fichero de configuración en texto plano.
 
 ## Configuración
 
-Para que Tomcat trabaje con HTTPS, en este caso utilizando el puerto 8443, hay que realizar la siguiente configuración, tanto a nivel de los ficheros de Tomcat, como los permisos minimos que hay que configurar en los certificados.
+Para que Tomcat trabaje con HTTPS, en este caso utilizando el puerto 8443, hay que realizar la siguiente configuración, tanto a nivel de los ficheros de Tomcat, como los permisos mínimos que hay que configurar en los certificados.
 
 Hay que descomentar y configurar la ruta de los certificados del siguiente bloque de código que se encuentra en `/etc/tomcat/server.xml`. En este caso, hemos predefinido que esa sea la ruta donde se almacenen los certificados. En el propio certificado vienen incluido el CA Root y CA Intermedio.
 

@@ -18,7 +18,7 @@ Una vez hecho eso, vamos al grano.
 Antes de crear el fichero, tenemos que crear el directorio de trabajo para rsyslog, en este caso `/var/spool/rsyslog`. El comando para ello es:  
 `mkdir /var/spool/rsyslog`
 
-Creamos un fichero llamado `<aplicacion>.conf`, podéis ponerle el nombre que queráis, dentro de `/etc/rsyslog.d/` con el siguiente contenido:
+Creamos un fichero llamado `<aplicación>.conf`, podéis ponerle el nombre que queráis, dentro de `/etc/rsyslog.d/` con el siguiente contenido:
 
 ```conf
 $ModLoad imfile
@@ -28,26 +28,26 @@ $WorkDirectory /var/spool/rsyslog
 $template Rfc5424Format,"<%PRI%>1 %TIMESTAMP:::date-rfc3339% %HOSTNAME% %APP-NAME% %PROCID% %MSGID% %STRUCTURED-DATA% %msg%"
 
 $InputFileName </ruta/fichero>
-$InputFileTag <aplicacion>-log
-$InputFileStateFile stat-<aplicacion>-log
+$InputFileTag <aplicación>-log
+$InputFileStateFile stat-<aplicación>-log
 $InputFileSeverity info
 $InputFilePersistStateInterval 20000
 $InputRunFileMonitor
-if $programname == '<aplicacion>-log' then @@<ip_servidor>:514;Rfc5424Format
-if $programname == '<aplicacion>-log' then stop
+if $programname == '<aplicación>-log' then @@<ip_servidor>:514;Rfc5424Format
+if $programname == '<aplicación>-log' then stop
 ```
 
 A primera vista esto asusta un poco, pero vamos a ir desglosando que función tiene cada línea del fichero.
 
-Los siguientes parametros son globales.
+Los siguientes parámetros son globales.
 
-* `$ModLoad imfile` carga el módulo de rsyslog. Lee línea a línea el fichero que le pasemos como parametro.
+* `$ModLoad imfile` carga el módulo de rsyslog. Lee línea a línea el fichero que le pasemos como parámetro.
 * `$InputFilePollInterval` especifica la frecuencia con la que comprueba los archivos para obtener nuevos datos.
 * `$WorkDirectory` el directorio de trabajo de rsyslog. Aquí se guardan los llamados _state file_, que contienen temporalmente los nuevos datos que se recogen para ser enviados.
 
 * `$template` el formato en el que se van a mandar los logs al servidor. Esta parte es muy importante, porque probando distintos formatos, me ha llegado a crear un fichero por cada línea que se recogía en el fichero.
 
-Estos parametros son especificos para el archivo con que vamos a trabajar.
+Estos parámetros son específicos para el archivo con que vamos a trabajar.
 
 * `$InputFileName` el fichero que queremos que recolecte la información y envíe.
 * `$InputFileTag` el nombre del fichero que se creará en el servidor y donde se mandará la información.

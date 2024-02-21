@@ -74,7 +74,7 @@ Nos debería aparecer una línea verde que indica que el servicio está en funci
 
 ### Paso 6: Trabajando con Docker
 
-En entornos de laboratorio se suele utilizar el usuario root para poder trabajar comodamente, pero una buena práctica es darle permisos a un usuario que no sea root sobre el grupo docker. Si estáis usando el usuario al que habéis dado permisos, tenéis que reiniciar la sesión.
+En entornos de laboratorio se suele utilizar el usuario root para poder trabajar cómodamente, pero una buena práctica es darle permisos a un usuario que no sea root sobre el grupo docker. Si estáis usando el usuario al que habéis dado permisos, tenéis que reiniciar la sesión.
 
 ```bash
 sudo usermod -aG docker $USER
@@ -111,6 +111,6 @@ For more examples and ideas, visit:
  https://docs.docker.com/get-started/
 ```
 
-En siguientes posts explicaremos más apartados de Docker, como qué son las imagenes, cómo crearlos con Dockerfiles, descargarnos imagenes sin ejecutarlas o acceder a los mismos con una consola interactiva.
+En siguientes posts explicaremos más apartados de Docker, como qué son las imágenes, cómo crearlos con Dockerfile, descargarnos imágenes sin ejecutarlas o acceder a los mismos con una consola interactiva.
 
 Espero que os haya gustado y os haya servido de ayuda. ¡Hasta la próxima!

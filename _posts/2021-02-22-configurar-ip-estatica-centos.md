@@ -67,7 +67,7 @@ El resultado del comando será parecido a lo que muestro a continuación. En mi 
     link/ether 62:c3:19:db:2a:2c brd ff:ff:ff:ff:ff:ff
 ```
 
-### Configurar la IP estática
+### Configuración IP estática
 
 * Método 1
 
@@ -126,7 +126,7 @@ Seleccionamos **Edit a connection** y presionamos **Enter**.
 
 ![Configurar IP][nmtui03]
 
-### Reinciamos la red
+### Reiniciamos la red
 
 Finalmente, reiniciamos el servicio de red para que se hagan efectivo los cambios que hemos hecho. Cuando hagamos esto no echará de la sesión porque se ha cambiado de IP.
 
@@ -148,7 +148,7 @@ Seleccionamos **Set system hostname** y presionamos **Enter**.
 
 Ahí ponemos el nombre que queramos que tenga el servidor y presionamos **OK**.
 
-La gente que quiera hacerlo por comando, tiene a su disposición `hostnamectl `.
+La gente que quiera hacerlo por comando, tiene a su disposición `hostnamectl`.
 
 Para cambiar el nombre sería de la siguiente manera:
 

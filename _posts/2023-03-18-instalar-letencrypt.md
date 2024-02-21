@@ -15,19 +15,21 @@ Configurar HTTPS para cifrar comunicaciones es algo muy importante y con esta he
 ## Dependencias para CentOS 7
 
 Sólo indico para CentOS ya que para Ubuntu no es necesario instalar nada previamente, actualizar el sistema con `apt update` y ya.
-Actualizamos e instalamos dependencias necesarias. Además de asegurarnos que tenemos disponible _epel-release_.  
+Actualizamos e instalamos dependencias necesarias. Además de asegurarnos que tenemos disponible _epel-release_.
+
 ```bash
 yum update -y
 yum -y install yum-utils
 ```
 
-En la [Wiki de CentOS][wikicentos] te indican cómo activarlo en arquitecturas ARMHFP por si trabajais en una Raspberry Pi.
+En la [Wiki de CentOS][wikicentos] te indican cómo activarlo en arquitecturas ARMHFP por si trabajáis en una Raspberry Pi.
 
 Una vez hecho esto, podemos seguir con la instalación.
 
 ## Instalación Certbot
 
-Instalamos Certbot.  
+Instalamos Certbot.
+
 ```bash
 # Para CentOS
 yum install certbot
@@ -47,6 +49,7 @@ certbot certonly --manual --preferred-challenges=dns --email=samuran@samurantech
 ```
 
 Donde:
+
 * `certonly`, indicamos que queremos descargar el certificado, que nos proporcione los ficheros.
 * `--manual`, hacemos que la ejecución sea de forma interactiva, que nos permita realizar cambios en los registros DNS, por ejemplo, antes de continuar con la ejecución del comando.
 * `--preferred-challenges=dns`, recomiendo esta opción porque sólo tendremos que crear un registro TXT en nuestro proveedor de DNS para que el comando compruebe que tenemos en propiedad ese dominio. Hay otra opción cambiando `dns` por `http`, pero la considero más tediosa al tener que crear un fichero en un servidor, publicarlo a internet y el comando compruebe si existe.

@@ -56,7 +56,7 @@ Ahora vamos a configurar el componente. De la siguiente manera sólo tendremos q
 
 ```bash
 PGPORT=5432
-CLUSTER_NAME="pecunpay-cluster-1"
+CLUSTER_NAME="cluster-1"
 MY_NAME=$(hostname --short)
 MY_IP=$(hostname -I | awk ' {print $1}')
 cat <<EOF | sudo tee /etc/patroni/config.yml
@@ -235,7 +235,7 @@ systemctl restart haproxy; tail -f /var/log/haproxy.log
 
 Si nos conectamos a la IP del Haproxy y al puerto 7000, podremos ver que nodos están en escritura/lectura y cuáles en sólo lectura.
 
-Con esto último ya habremos terminado la configuración por completo. Se pueden hacer más configuraciones como poner que uno de los nodos sea asincrono con la etiqueta `nosync: true` o sincrono si lo configuramos como `nosync: false`
+Con esto último ya habremos terminado la configuración por completo. Se pueden hacer más configuraciones como poner que uno de los nodos sea asíncrono con la etiqueta `nosync: true` o síncrono si lo configuramos como `nosync: false`
 
 La verdad es que es una herramienta que da mucho juego y nos permite manejar un cluster de postgres de forma muy sencilla.
 

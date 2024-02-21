@@ -17,6 +17,6 @@ StandardOutput=append:/var/log/tomcat9/catalina.out
 StandardError=append:/var/log/tomcat9/catalina.out
 ```
 
-Una vez hecho esto, ejecutamos `systemctl daemon-reload` para que coja los cambios al haber modificado el fichero del servicio y aunque a veces no es necesario porque lo hace automatico, reiniciar el servicio de Tomcat9 con `systemctl restart tomcat9`.
+Una vez hecho esto, ejecutamos `systemctl daemon-reload` para que coja los cambios al haber modificado el fichero del servicio y aunque a veces no es necesario porque lo hace automático, reiniciar el servicio de Tomcat9 con `systemctl restart tomcat9`.
 
 Espero que os haya gustado y os haya servido de ayuda. ¡Hasta la próxima!
