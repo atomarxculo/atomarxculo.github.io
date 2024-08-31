@@ -11,6 +11,8 @@ Posibles futuros posts:
 - Configurar Webhook GitLab/Jenkins
 - Instalar Ansible en Ubuntu y/o usar imagen Docker
 - Instalar Active Directory en Windows Server 2019
+- Añadir disco LVM en Linux
+- Ampliar disco LVM en Linux
 - ~~Instalar FreeIPA Server~~
 - ~~Añadir clientes a FreeIPA~~
 - ~~Instalación Barman y configuración~~
