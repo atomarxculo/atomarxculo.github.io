@@ -3,7 +3,7 @@ layout: post
 title: Instalar Docker en Ubuntu
 date: 2021-02-17 16:45:00 +0200
 description: En el post anterior aprendimos a instalar Docker, en este post haremos lo propio Ubuntu.
-img: docker.jpg # Add image post (optional)
+img: /assets/img/docker.jpg # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: [docker, linux, ubuntu]
 ---

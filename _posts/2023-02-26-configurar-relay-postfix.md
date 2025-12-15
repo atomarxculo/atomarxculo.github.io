@@ -3,7 +3,7 @@ layout: post
 title: Configurar relay Postfix
 date: 2023-02-26 18:50:00 +0200
 description: En ocasiones nos interesa que nuestro servidor de correo Postfix utilice un SMTP relay para mandar los emails por otro lado.
-img: sysadmin.jpg # Add image post (optional)
+img: /assets/img/sysadmin.jpg # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: [linux]
 ---

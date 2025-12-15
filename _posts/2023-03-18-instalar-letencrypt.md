@@ -3,7 +3,7 @@ layout: post
 title: Instalar Let's Encrypt en CentOS 7 y Ubuntu 20.04
 date: 2023-03-18 12:00:00 +0000
 description: Configurar HTTPS para cifrar comunicaciones es algo muy importante
-img: sysadmin.jpg # Add image post (optional)
+img: /assets/img/sysadmin.jpg # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: [linux, centos, ubuntu]
 ---

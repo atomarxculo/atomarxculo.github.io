@@ -3,7 +3,7 @@ layout: post
 title: Instalar cliente de FreeIPA
 date: 2024-02-06 08:00:00 +0000
 description: En este post empezaremos a añadir servidores a nuestro dominio local para poder conectarnos a ellos mediante la autenticación centralizada que nos ofrece IPA.
-img: freeipa-logo.png # Add image post (optional)
+img: /assets/img/freeipa-logo.png # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: [linux, ubuntu, rocky, freeipa]
 ---

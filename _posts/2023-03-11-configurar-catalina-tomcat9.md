@@ -3,7 +3,7 @@ layout: post
 title: Configurar Catalina.out en Tomcat9
 date: 2023-03-11 09:30:00 +0000
 description: Por defecto, Tomcat 9 crea dicho fichero con la fecha al final del nombre (catalina.2022-08-30.log)
-img: tomcat-server.png # Add image post (optional)
+img: /assets/img/tomcat-server.png # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: [linux, tomcat]
 ---

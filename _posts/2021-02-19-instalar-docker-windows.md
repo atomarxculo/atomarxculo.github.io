@@ -3,7 +3,7 @@ layout: post
 title: Instalar Docker en Windows
 date: 2021-02-19 15:55:00 +0200
 description: En el post anterior, aprendimos cómo instalar Docker en un servidor CentOS. En esta ocasión haremos lo propio en un Windows 10, para poder trabajar con la herramienta en nuestro equipo. # Add post description (optional)
-img: docker.jpg # Add image post (optional)
+img: /assets/img/docker.jpg # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: [docker, windows]
 ---

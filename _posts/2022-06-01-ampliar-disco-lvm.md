@@ -3,7 +3,7 @@ layout: post
 title: Ampliar disco LVM
 date: 2022-06-01 21:50:00 +0200
 description: 
-img: linux-logo.png # Add image post (optional)
+img: /assets/img/linux-logo.png # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: [lvm, linux]
 ---

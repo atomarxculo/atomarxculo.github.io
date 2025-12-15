@@ -3,7 +3,7 @@ layout: post
 title: Crear una política de contraseñas en FreeIPA
 date: 2024-02-09 08:00:00 +0000
 description: A la hora de crear usuarios que usaremos para servicios en nuestro FreeIPA, nos interesa que la contraseña de estos no cambien.
-img: freeipa-logo.png # Add image post (optional)
+img: /assets/img/freeipa-logo.png # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: [linux, ubuntu, rocky, freeipa]
 ---
