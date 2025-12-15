@@ -5,8 +5,8 @@ date: 2022-03-07 19:00:00 +0200
 description: En el post anterior, configuramos un servidor rsyslog para centralizar todos los logs de nuestra infraestructura. # Add post description (optional)
 img: /assets/img/rsyslog-logo.png # Add image post (optional)
 fig-caption: # Add figcaption (optional)
-tags: [rsyslog, linux, docker]
-categories: [rsyslog, linux, docker]
+tags: [linux, docker, rsyslog]
+categories: [linux, docker, rsyslog]
 ---
 
 En el post anterior, configuramos un servidor rsyslog para centralizar todos los logs de nuestra infraestructura. En este, configuraremos tanto el servidor Docker que desplegamos para que envíe los logs al rsyslog, como el servidor rsyslog para que los recoja.

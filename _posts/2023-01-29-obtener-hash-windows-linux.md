@@ -5,8 +5,8 @@ date: 2023-01-29 19:55:00 +0200
 description: Una cosa muy importante a tener en cuenta cuando descargamos un fichero de internet, es asegurar su integridad.
 img: /assets/img/sysadmin.jpg # Add image post (optional)
 fig-caption: # Add figcaption (optional)
-tags: [windows, linux]
-categories: [windows, linux]
+tags: [linux, windows]
+categories: [linux, windows]
 ---
 
 Una cosa muy importante a tener en cuenta cuando descargamos un fichero de internet, es asegurar su integridad, que los datos no hayan sido modificados sin autorización en dicho proceso. Para ello, lo recomendable es comprobar el [hash](https://cau.sci.uma.es/faq/index.php?solution_id=1181) del mismo de las siguientes formas, ya sea para Windows o Linux. También es recomendable comprobar el hash cuando se copia un fichero de un equipo a otro, ya que si hay algún corte en la comunicación, el fichero se queda corrupto.

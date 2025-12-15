@@ -5,8 +5,8 @@ date: 2023-01-22 11:15:00 +0200
 description: A veces rsyslog puede dar fallo, pero por defecto, estos logs no vienen habilitados, para ello tendremos que agregar estas líneas en el fichero de configuración `rsyslog.conf`
 img: /assets/img/rsyslog-logo.png # Add image post (optional)
 fig-caption: # Add figcaption (optional)
-tags: [rsyslog, linux]
-categories: [rsyslog, linux]
+tags: [linux, rsyslog]
+categories: [linux, rsyslog]
 ---
 
 A veces rsyslog puede dar fallo, pero por defecto, estos logs no vienen habilitados, para ello tendremos que agregar estas líneas en el fichero de configuración `rsyslog.conf`
