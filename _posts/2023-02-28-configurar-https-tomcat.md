@@ -3,7 +3,7 @@ layout: post
 title: Configurar HTTPS en Tomcat
 date: 2023-02-28 18:00:00 +0000
 description: En el artículo anterior hablé de un error al intentar arrancar Tomcat9 y caí en que podría hablar de cómo configurar HTTPS en este servicio.
-img: /assets/img/tomcat-server.png # Add image post (optional)
+image: /assets/img/tomcat-server.png # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: [linux, tomcat, https]
 categories: [linux, tomcat, https]

@@ -3,7 +3,7 @@ layout: post
 title: Instalar etcd en Ubuntu
 date: 2023-10-24 15:00:00 +0000
 description: En este artículo se documenta cómo realizar la instalación de un clúster de ETCD, una BBDD que almacena los datos en formato key-value.
-img: /assets/img/sysadmin.jpg # Add image post (optional)
+image: /assets/img/sysadmin.jpg # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: [linux, ubuntu, postgres]
 categories: [linux, ubuntu, postgres]

@@ -3,7 +3,7 @@ layout: post
 title: Instalar CentOS en Raspberry Pi
 date: 2021-02-21 21:48:00 +0200
 description: Hace tiempo tengo varias Raspberry Pi muertas de risa y quiero darles un algún uso, pero no quiero utilizar Raspberry Pi OS, así que instalaremos CentOS 7 para arquitecturas ARM. # Add post description (optional)
-img: /assets/img/centos-logo.jpg # Add image post (optional)
+image: /assets/img/centos-logo.jpg # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: [linux, centos, raspberry pi]
 categories: [linux, centos, raspberry pi]
