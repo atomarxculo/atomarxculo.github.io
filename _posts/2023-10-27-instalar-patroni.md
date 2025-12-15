@@ -6,6 +6,7 @@ description: En este artículo se documenta cómo realizar la instalación de Pa
 img: /assets/img/sysadmin.jpg # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: [linux, ubuntu, postgres]
+categories: [linux, ubuntu, postgres]
 ---
 
 En este artículo se documenta cómo realizar la instalación de [Patroni](https://github.com/zalando/patroni), un componente para crear cluster de PostgreSQL con Zookeeper, etcd o Consul. En nuestro caso, utilizaremos etcd, que comenté en el [artículo anterior](https://www.samurantech.com/instalar-etcd/), para ello y HAProxy, esto explicado al final de este mismo artículo, para el balanceo entre los nodos finales.

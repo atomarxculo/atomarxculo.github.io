@@ -6,6 +6,7 @@ description: En el post anterior instalamos CentOS en nuestra Raspberry, hoy la 
 img: /assets/img/centos-logo.jpg # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: [centos, raspberry pi]
+categories: [centos, raspberry pi]
 ---
 
 En el [post anterior][centosraspberry] instalamos CentOS en nuestra Raspberry, hoy la configuraremos para poder darle uso.

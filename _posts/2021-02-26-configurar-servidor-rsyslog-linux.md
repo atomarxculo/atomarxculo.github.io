@@ -6,6 +6,7 @@ description: Los logs es una parte muy importante en el día a día de nuestro t
 img: /assets/img/rsyslog-logo.png # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: [rsyslog, linux]
+categories: [rsyslog, linux]
 ---
 
 Los logs, esos ficheros que recogen lo que sucede en nuestro sistema y sus aplicaciones, es una parte muy importante en el día a día de nuestro trabajo como sysadmin, pero tener que revisar muchos de estos puede llegar a ser una locura, más ahora que el número de servidores que tenemos que tener bajo control es cada vez más y más grande.

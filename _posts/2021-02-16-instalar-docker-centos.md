@@ -6,6 +6,7 @@ description: Hoy hablaremos de una herramienta muy interesante y que cada vez ti
 img: ./assets/img/docker.jpg # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: [docker, linux, centos]
+categories: [docker, linux, centos]
 ---
 
 Hoy hablaremos de una herramienta muy interesante y que cada vez tiene más cabida en nuestro trabajo como sysadmin, Docker. Aprenderemos a instalar Docker en Linux.

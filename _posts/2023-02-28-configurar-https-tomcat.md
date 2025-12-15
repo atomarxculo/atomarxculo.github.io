@@ -6,6 +6,7 @@ description: En el artículo anterior hablé de un error al intentar arrancar To
 img: /assets/img/tomcat-server.png # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: [linux, tomcat, https]
+categories: [linux, tomcat, https]
 ---
 
 En el artículo anterior hablé de un error al intentar arrancar Tomcat9 y caí en que podría hablar de cómo configurar HTTPS en este servicio. Usaremos certificados PEM, en vez de JKS, ya que pienso que es más cómodo al no tener que generar dicho fichero para esto y que la contraseña se tiene que dejar en el fichero de configuración en texto plano.

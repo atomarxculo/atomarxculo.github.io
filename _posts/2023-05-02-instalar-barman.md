@@ -6,6 +6,7 @@ description: Tener al día los backups es algo muy importante y más si hablamos
 img: /assets/img/sysadmin.jpg # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: [linux, ubuntu, postgres, backup]
+categories: [linux, ubuntu, postgres, backup]
 ---
 
 Tener al día los backups es algo muy importante y más si hablamos de BBDD, por eso el día de hoy traigo esta herramienta llamada [Barman](https://pgbarman.org) que funciona con servidores PostgreSQL.

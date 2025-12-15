@@ -6,6 +6,7 @@ description: A la hora de crear usuarios que usaremos para servicios en nuestro 
 img: /assets/img/freeipa-logo.png # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: [linux, ubuntu, rocky, freeipa]
+categories: [linux, ubuntu, rocky, freeipa]
 ---
 
 A la hora de crear usuarios que usaremos para servicios en nuestro FreeIPA, nos interesa que la contraseña de estos no cambien. Así que lo que haremos en este post es crear una política que evite que caduquen.

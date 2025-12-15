@@ -6,6 +6,7 @@ description: En posts anteriores (ha pasado tiempo desde entonces, debería darl
 img: /assets/img/linux-logo.png # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: [linux, lvm]
+categories: [linux, lvm]
 ---
 
 En posts [anteriores](https://www.samurantech.com/ampliar-disco-lvm/) (ha pasado tiempo desde entonces, debería darle una vuelta y actualizarlo) vimos cómo ampliar un disco LVM que ya teníamos, así que en este post vamos a añadir un nuevo disco LVM de nuestro servidor Linux.

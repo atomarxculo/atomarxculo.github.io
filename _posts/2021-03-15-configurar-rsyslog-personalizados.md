@@ -6,6 +6,7 @@ description: En esta ocasión, vamos a configurar Rsyslog para que recolecte cua
 img: /assets/img/rsyslog-logo.png # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: [rsyslog, linux]
+categories: [rsyslog, linux]
 ---
 
 En esta ocasión, vamos a configurar Rsyslog para que recolecte cualquier log que le indiquemos. Esto es muy útil si tenemos un aplicación propia que genere logs o cualquier otra aplicación como puede ser Tomcat, por ejemplo, además de ser fácil de implementar (una vez te has peleado con ello).

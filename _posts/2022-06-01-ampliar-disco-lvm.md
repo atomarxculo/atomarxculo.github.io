@@ -6,6 +6,7 @@ description:
 img: /assets/img/linux-logo.png # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: [lvm, linux]
+categories: [lvm, linux]
 ---
 
 Para ampliar el espacio en un disco que ya esté en el servidor, sin añadir un disco duro nuevo, hay que seguir los siguientes pasos.

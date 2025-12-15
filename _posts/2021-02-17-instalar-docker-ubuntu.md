@@ -6,6 +6,7 @@ description: En el post anterior aprendimos a instalar Docker, en este post hare
 img: /assets/img/docker.jpg # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: [docker, linux, ubuntu]
+categories: [docker, linux, ubuntu]
 ---
 
 En el post anterior aprendimos a instalar Docker, en este post haremos lo propio Ubuntu. Aunque haya varias maneras de instalarlo, en esta caso utilizaremos la instalación por repositorio.

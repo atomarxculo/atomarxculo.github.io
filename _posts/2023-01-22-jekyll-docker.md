@@ -6,6 +6,7 @@ description: Para hacer esta web, utilicé Jekyll, un generador de sitios web es
 img: /assets/img/jekyll-logo.png # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: [docker, jekyll]
+categories: [docker, jekyll]
 ---
 
 Para hacer esta web, utilicé Jekyll, un generador de sitios web estáticos que permite crear cada página web a partir de un fichero Markdown. Para que sea mucho más cómodo utilizarlo, usaremos Docker para que sea sólo usar un contenedor y no tener que instalar más cosas en nuestros equipos.

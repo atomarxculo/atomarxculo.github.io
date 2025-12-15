@@ -6,6 +6,7 @@ description: Este es el primer post, espero que el primero de muchos, donde cuen
 img: /assets/img/sysadmin.jpg # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: [blog]
+categories: [Blog]
 ---
 
 Este es el primer post, espero que el primero de muchos, donde cuento la idea que tengo sobre el blog.

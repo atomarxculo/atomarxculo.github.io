@@ -6,6 +6,7 @@ description: En anteriores posts, instalamos y configuramos Barman para que se e
 img: /assets/img/sysadmin.jpg # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: [linux, ubuntu, postgres, backup]
+categories: [linux, ubuntu, postgres, backup]
 ---
 
 En anteriores [posts](https://www.samurantech.com/instalar-barman/), instalamos y configuramos Barman para que se encargase de las copias de seguridad de nuestras BBDD montadas sobre PostgreSQL. En este veremos cómo restaurar uno de los backups que hayamos hecho.

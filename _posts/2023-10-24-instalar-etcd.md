@@ -6,6 +6,7 @@ description: En este artículo se documenta cómo realizar la instalación de un
 img: /assets/img/sysadmin.jpg # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: [linux, ubuntu, postgres]
+categories: [linux, ubuntu, postgres]
 ---
 
 En este artículo voy a explicar cómo realizar la instalación de un clúster de [ETCD](https://etcd.io/), una BBDD que almacena los datos en formato key-value. La instalación se ha realizado sobre 3 nodos Ubuntu 20.04.

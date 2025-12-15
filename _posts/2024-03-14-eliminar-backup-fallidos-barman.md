@@ -6,6 +6,7 @@ description: Por si algún casual fallasen varios backups de seguidos, en vez de
 img: /assets/img/sysadmin.jpg # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: [linux, ubuntu, postgres, backup]
+categories: [linux, ubuntu, postgres, backup]
 ---
 
 Por si algún casual fallasen varios backups de seguidos, en vez de eliminarlos uno a uno podemos hacer lo siguiente para eliminar todos.

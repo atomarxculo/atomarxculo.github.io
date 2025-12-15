@@ -6,6 +6,7 @@ description: En este post empezaremos a añadir servidores a nuestro dominio loc
 img: /assets/img/freeipa-logo.png # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: [linux, ubuntu, rocky, freeipa]
+categories: [linux, ubuntu, rocky, freeipa]
 ---
 
 En este post empezaremos a añadir servidores a nuestro dominio local, el cual desplegamos en el anterior [post](https://www.samurantech.com/instalar-freeipa-server-rockylinux/), para poder conectarnos a ellos mediante la autenticación centralizada que nos ofrece IPA.
