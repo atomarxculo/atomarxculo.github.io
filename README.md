@@ -31,4 +31,4 @@ Posibles futuros posts:
 - Despliegue de un cluster de Consul
 - Integración componentes HashiCorp
 
-Template Web: [Flexible Jekyll](https://github.com/artemsheludko/flexible-jekyll)
+Template Web: [Jekyll Theme Chirpy](https://github.com/cotes2020/jekyll-theme-chirpy/tree/master)
