@@ -3,10 +3,9 @@ layout: post
 title: Desactivar error multipath Ubuntu
 date: 2024-04-18 08:00:00 +0000
 description: Trabajando con algún servidor Ubuntu, ya sea la versión 20.04 o 22.04, me he fijado que en los logs suele dar un error relacionado con multipath.
-image: /assets/img/linux-logo.png # Add image post (optional)
+img: linux-logo.png # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: [linux, ubuntu]
-categories: [linux, ubuntu]
 ---
 
 Trabajando con algún servidor Ubuntu, ya sea la versión 20.04 o 22.04, me he fijado que en los logs suele dar un error relacionado con multipath.

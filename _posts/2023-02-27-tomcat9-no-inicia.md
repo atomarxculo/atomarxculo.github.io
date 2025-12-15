@@ -3,10 +3,9 @@ layout: post
 title: Tomcat9 no inicia al reiniciar el servidor
 date: 2023-02-27 16:30:00 +0200
 description: Donde trabajo estamos migrando los servidores con Tomcat 8 a Tomcat 9 y al reiniciar el servidor por completo, nos encontramos con esto.
-image: /assets/img/tomcat-server.png # Add image post (optional)
+img: tomcat-server.png # Add image post (optional)
 fig-caption: # Add figcaption (optional)
-tags: [linux, tomcat]
-categories: [linux, tomcat]
+tags: [tomcat, linux]
 ---
 
 Donde trabajo estamos migrando los servidores con Tomcat 8 a Tomcat 9 y al reiniciar el servidor por completo, nos encontramos con esto, que el servicio no se levanta automáticamente, pero si lo inicias mediante un `systemctl restart tomcat9`, levanta sin problemas. Para dar más detalles, esto me ocurrió en Ubuntu, con la versión de Tomcat 9 instalada por repositorio.

@@ -3,10 +3,9 @@ layout: post
 title: Configurar relay Postfix
 date: 2023-02-26 18:50:00 +0200
 description: En ocasiones nos interesa que nuestro servidor de correo Postfix utilice un SMTP relay para mandar los emails por otro lado.
-image: /assets/img/sysadmin.jpg # Add image post (optional)
+img: sysadmin.jpg # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: [linux]
-categories: [linux]
 ---
 
 En ocasiones nos interesa que nuestro servidor de correo Postfix utilice un [SMTP relay](https://www.ionos.es/digitalguide/correo-electronico/cuestiones-tecnicas/smtp-relay/#c184170) para mandar los emails por otro lado, ya sea por motivos de seguridad o por casos temporales como puede ser en mi caso porque Apple se puso tonto y metían cada dos por tres a mis dominios en sus blacklists.

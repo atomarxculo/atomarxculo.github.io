@@ -3,10 +3,9 @@ layout: post
 title: Eliminar backups fallidos de Barman
 date: 2024-03-14 08:00:00 +0000
 description: Por si algún casual fallasen varios backups de seguidos, en vez de eliminarlos uno a uno podemos hacer lo siguiente para eliminar todos.
-image: /assets/img/sysadmin.jpg # Add image post (optional)
+img: sysadmin.jpg # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: [linux, ubuntu, postgres, backup]
-categories: [linux, ubuntu, postgres, backup]
 ---
 
 Por si algún casual fallasen varios backups de seguidos, en vez de eliminarlos uno a uno podemos hacer lo siguiente para eliminar todos.

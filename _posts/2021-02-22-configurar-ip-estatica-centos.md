@@ -3,10 +3,9 @@ layout: post
 title: Configurar IP estática en CentOS
 date: 2021-02-22 11:15:00 +0200
 description: En el post anterior instalamos CentOS en nuestra Raspberry, hoy la configuraremos para poder darle uso. # Add post description (optional)
-image: /assets/img/centos-logo.jpg # Add image post (optional)
+img: centos-logo.jpg # Add image post (optional)
 fig-caption: # Add figcaption (optional)
-tags: [linux, centos, raspberry pi]
-categories: [linux, centos, raspberry pi]
+tags: [centos, raspberry pi]
 ---
 
 En el [post anterior][centosraspberry] instalamos CentOS en nuestra Raspberry, hoy la configuraremos para poder darle uso.

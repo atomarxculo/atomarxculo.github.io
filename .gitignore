@@ -1,27 +1,35 @@
-# Bundler cache
-.bundle
-vendor
-Gemfile.lock
-
-# Jekyll cache
-.jekyll-cache
-.jekyll-metadata
 _site
-
-# RubyGems
-*.gem
-
-# NPM dependencies
-node_modules
+.sass-cache
+.jekyll-metadata
+.jekyll-cache
+yarn.lock
+Gemfile.lock
 package-lock.json
+node_modules/
 
-# IDE configurations
-.idea
-.vscode/*
-!.vscode/settings.json
-!.vscode/extensions.json
-!.vscode/tasks.json
+### macOS ###
+*.DS_Store
+.AppleDouble
+.LSOverride
 
-# Misc
-_sass/vendors
-assets/js/dist
+# Icon must end with two \r
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
