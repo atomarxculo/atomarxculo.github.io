@@ -3,9 +3,10 @@ layout: post
 title: Configurar inotify
 date: 2023-03-02 09:30:00 +0000
 description: Inotify es un watcher que vigila un directorio y cuando detecta un evento que nosotros definamos, como que llegue un fichero nuevo (o movido en él) ejecuta una acción.
-img: sysadmin.jpg # Add image post (optional)
+image: /assets/img/sysadmin.jpg # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: [linux]
+categories: [linux]
 ---
 
 Inotify es un watcher que vigila un directorio y cuando detecta un evento que nosotros definamos, como que llegue un fichero nuevo (o movido en él) ejecuta una acción. Esto resulta muy útil si queremos que un proceso se ejecute al momento en vez de esperar a cierta hora para que eso se produzca.

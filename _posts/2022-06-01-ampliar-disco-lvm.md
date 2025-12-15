@@ -3,9 +3,10 @@ layout: post
 title: Ampliar disco LVM
 date: 2022-06-01 21:50:00 +0200
 description: 
-img: linux-logo.png # Add image post (optional)
+image: /assets/img/linux-logo.png # Add image post (optional)
 fig-caption: # Add figcaption (optional)
-tags: [lvm, linux]
+tags: [linux, lvm]
+categories: [linux, lvm]
 ---
 
 Para ampliar el espacio en un disco que ya esté en el servidor, sin añadir un disco duro nuevo, hay que seguir los siguientes pasos.

@@ -3,9 +3,10 @@ layout: post
 title: Recolectar cualquier logs con Rsyslog
 date: 2021-03-15 20:35:00 +0200
 description: En esta ocasión, vamos a configurar Rsyslog para que recolecte cualquier log que le indiquemos. # Add post description (optional)
-img: rsyslog-logo.png # Add image post (optional)
+image: /assets/img/rsyslog-logo.png # Add image post (optional)
 fig-caption: # Add figcaption (optional)
-tags: [rsyslog, linux]
+tags: [linux, rsyslog]
+categories: [linux, rsyslog]
 ---
 
 En esta ocasión, vamos a configurar Rsyslog para que recolecte cualquier log que le indiquemos. Esto es muy útil si tenemos un aplicación propia que genere logs o cualquier otra aplicación como puede ser Tomcat, por ejemplo, además de ser fácil de implementar (una vez te has peleado con ello).
