@@ -24,6 +24,9 @@ jobs:
           ruby-version: '3.2'
           bundler-cache: true
 
+      - name: Build Assets
+        run: npm i && npm run build
+
       - run: bundle exec jekyll build
 
       - uses: peaceiris/actions-gh-pages@v4
