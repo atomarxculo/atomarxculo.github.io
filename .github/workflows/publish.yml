@@ -11,6 +11,8 @@ on:
       BUILDER:
         required: true
   workflow_dispatch:
+  repository_dispatch:
+    types: [deploy]
 
 jobs:
   launch:
