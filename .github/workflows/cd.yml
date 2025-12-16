@@ -2,7 +2,9 @@ name: CD
 
 on:
   push:
-    branches: [production]
+    branches: 
+      - master
+      - production
     tags-ignore: ["**"]
 
 jobs:
