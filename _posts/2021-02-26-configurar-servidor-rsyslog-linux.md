@@ -3,9 +3,10 @@ layout: post
 title: Configurar servidor Rsyslog en Linux
 date: 2021-02-22 11:15:00 +0200
 description: Los logs es una parte muy importante en el día a día de nuestro trabajo como sysadmin, pero tener que revisar muchos de estos puede llegar a ser una locura. # Add post description (optional)
-img: rsyslog-logo.png # Add image post (optional)
+image: /assets/img/rsyslog-logo.png # Add image post (optional)
 fig-caption: # Add figcaption (optional)
-tags: [rsyslog, linux]
+tags: [linux, rsyslog]
+categories: [linux, rsyslog]
 ---
 
 Los logs, esos ficheros que recogen lo que sucede en nuestro sistema y sus aplicaciones, es una parte muy importante en el día a día de nuestro trabajo como sysadmin, pero tener que revisar muchos de estos puede llegar a ser una locura, más ahora que el número de servidores que tenemos que tener bajo control es cada vez más y más grande.

@@ -3,9 +3,10 @@ layout: post
 title: Instalar FreeIPA Server en Rocky Linux 9
 date: 2023-04-01 08:00:00 +0000
 description: Para que nos entendamos con FreeIPA, es como el Active Directory de Windows, pero desde mi punto de vista, mejor porque es en Linux.
-img: freeipa-logo.png # Add image post (optional)
+image: /assets/img/freeipa-logo.png # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: [linux, rocky, freeipa]
+categories: [linux, rocky, freeipa]
 ---
 
 Para que nos entendamos con FreeIPA, es como el Active Directory de Windows, pero desde mi punto de vista, mejor porque es en Linux. Con este servicio podremos centralizar la autenticación y autorización a los servidores de nuestra infraestructura, además de poder gestionar certificados, claves SSH (aunque esté incluido en lo que he comentado en lo de autenticación/autorización), poder hacer que se automonte particiones en los servidores, DNS, etcétera... Vamos que vale para muchas cosas que ya iremos viendo.
