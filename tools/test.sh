@@ -63,7 +63,7 @@ main() {
   # test
   bundle exec htmlproofer "$SITE_DIR" \
     --disable-external \
-    --ignore-urls ".*"
+    --no-enforce-https
 }
 
 while (($#)); do
