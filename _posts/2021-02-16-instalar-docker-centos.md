@@ -4,7 +4,6 @@ title: Instalar Docker en CentOS
 date: 2021-02-16 16:45:00 +0200
 description: Hoy hablaremos de una herramienta muy interesante y que cada vez tiene más cabida en nuestro trabajo como sysadmin, Docker. Aprenderemos a instalar Docker en CentOS. # Add post description (optional)
 image: ./assets/img/docker.jpg # Add image post (optional)
-fig-caption: # Add figcaption (optional)
 tags: [linux, docker, centos]
 categories: [linux, docker, centos]
 ---

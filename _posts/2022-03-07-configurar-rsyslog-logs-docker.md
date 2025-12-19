@@ -4,7 +4,6 @@ title: Configurar Rsyslog para recolectar logs de Docker
 date: 2022-03-07 19:00:00 +0200
 description: En el post anterior, configuramos un servidor rsyslog para centralizar todos los logs de nuestra infraestructura. # Add post description (optional)
 image: /assets/img/rsyslog-logo.png # Add image post (optional)
-fig-caption: # Add figcaption (optional)
 tags: [linux, docker, rsyslog]
 categories: [linux, docker, rsyslog]
 ---

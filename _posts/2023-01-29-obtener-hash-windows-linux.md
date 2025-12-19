@@ -4,7 +4,6 @@ title: Obtener hash de un fichero (Windows/Linux)
 date: 2023-01-29 19:55:00 +0200
 description: Una cosa muy importante a tener en cuenta cuando descargamos un fichero de internet, es asegurar su integridad.
 image: /assets/img/sysadmin.jpg # Add image post (optional)
-fig-caption: # Add figcaption (optional)
 tags: [linux, windows]
 categories: [linux, windows]
 ---

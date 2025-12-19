@@ -4,7 +4,6 @@ title: Utilizar jekyll en Docker
 date: 2023-01-22 20:55:00 +0200
 description: Para hacer esta web, utilicé Jekyll, un generador de sitios web estáticos que permite crear cada página web a partir de un fichero Markdown.
 image: /assets/img/jekyll-logo.png # Add image post (optional)
-fig-caption: # Add figcaption (optional)
 tags: [docker, jekyll]
 categories: [docker, jekyll]
 ---

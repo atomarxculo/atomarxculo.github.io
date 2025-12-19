@@ -4,7 +4,6 @@ title: Recolectar cualquier logs con Rsyslog
 date: 2021-03-15 20:35:00 +0200
 description: En esta ocasión, vamos a configurar Rsyslog para que recolecte cualquier log que le indiquemos. # Add post description (optional)
 image: /assets/img/rsyslog-logo.png # Add image post (optional)
-fig-caption: # Add figcaption (optional)
 tags: [linux, rsyslog]
 categories: [linux, rsyslog]
 ---
