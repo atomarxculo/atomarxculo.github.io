@@ -27,9 +27,7 @@ jobs:
       - name: Build Assets
         run: npm i && npm run build
 
-      - run: bundle exec jekyll build
-        env:
-          JEKYLL_ENV: "production"
+      - run: JEKYLL_ENV="production" bundle exec jekyll build
 
       - uses: peaceiris/actions-gh-pages@v4
         with:
