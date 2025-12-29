@@ -30,6 +30,7 @@ Posibles futuros posts:
 - Despliegue de un cluster de Nomad
 - Despliegue de un cluster de Consul
 - Integración componentes HashiCorp
+- Instalación y configuración de repmgr
 
 Template Web: [Jekyll Theme Chirpy](https://github.com/cotes2020/jekyll-theme-chirpy/tree/master)
 
