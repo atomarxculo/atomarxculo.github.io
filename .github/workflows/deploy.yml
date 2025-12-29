@@ -6,6 +6,8 @@ on:
   repository_dispatch:
     types: [deploy]
   workflow_dispatch:
+  schedule:
+    - cron "15 16 * * *"
 
 permissions:
   contents: write
