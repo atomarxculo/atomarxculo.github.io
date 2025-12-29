@@ -32,3 +32,12 @@ Posibles futuros posts:
 - Integración componentes HashiCorp
 
 Template Web: [Jekyll Theme Chirpy](https://github.com/cotes2020/jekyll-theme-chirpy/tree/master)
+
+## Construcción y desarrollo en local
+
+Para estos pasos, hay que abrir el proyecto con `devcontainer` de Visual Studio Code
+
+```bash
+bundle install
+JEKYLL_ENV=dev bundle exec jekyll serve
+```
