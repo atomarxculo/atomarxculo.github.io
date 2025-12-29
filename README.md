@@ -39,5 +39,5 @@ Para estos pasos, hay que abrir el proyecto con `devcontainer` de Visual Studio 
 
 ```bash
 bundle install
-JEKYLL_ENV=dev bundle exec jekyll serve
+JEKYLL_ENV=dev bundle exec jekyll serve --future
 ```
