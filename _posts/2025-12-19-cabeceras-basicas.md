@@ -52,3 +52,5 @@ Esta sería una web que cuenta con seguridad:
 Esta cabecera no está incluida en este post, ya que requiere una configuración específica que hay que adaptar a cada dominio al que hay que agregarlo.
 
 Esta cabecera ofrece una capa de protección adicional contra ataques como *Cross-Site Scripting (XSS)* o *data injection*.
+
+Espero que os haya gustado y os haya servido de ayuda. ¡Hasta la próxima!
