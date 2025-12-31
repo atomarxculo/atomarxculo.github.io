@@ -68,4 +68,4 @@ Puedes jugar bastante con Rsyslog y todas las posibilidades que te ofrece, facil
 
 Espero que os haya gustado y os haya servido de ayuda. ¡Hasta la próxima!
 
-[rsyslog]: https://www.samurantech.com/configurar-rsyslog-central-linux/
+[rsyslog]: https://www.samurantech.com/posts/configurar-servidor-rsyslog-linux/

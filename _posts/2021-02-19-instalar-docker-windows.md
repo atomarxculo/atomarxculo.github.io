@@ -68,7 +68,7 @@ Es una herramienta muy potente que yo utilizo para realizar desarrollos y prueba
 
 Espero que os haya gustado y os haya servido de ayuda. ¡Hasta la próxima!
 
-[linuxdocker]: https://www.samurantech.com/instalar-docker-linux/
+[linuxdocker]: https://www.samurantech.com/posts/instalar-docker-linux/
 [wsl2]: https://docs.microsoft.com/es-es/windows/wsl/install-win10#step-4---download-the-linux-kernel-update-package
 [dockerweb]: https://www.docker.com/products/docker-desktop
 [dockerhub]: https://hub.docker.com/editions/community/docker-ce-desktop-windows

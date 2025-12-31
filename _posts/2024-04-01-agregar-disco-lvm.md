@@ -8,7 +8,7 @@ tags: [linux, lvm]
 categories: [linux, lvm]
 ---
 
-En posts [anteriores](https://www.samurantech.com/ampliar-disco-lvm/) (ha pasado tiempo desde entonces, debería darle una vuelta y actualizarlo) vimos cómo ampliar un disco LVM que ya teníamos, así que en este post vamos a añadir un nuevo disco LVM de nuestro servidor Linux.
+En posts [anteriores](https://www.samurantech.com/posts/ampliar-disco-lvm/) (ha pasado tiempo desde entonces, debería darle una vuelta y actualizarlo) vimos cómo ampliar un disco LVM que ya teníamos, así que en este post vamos a añadir un nuevo disco LVM de nuestro servidor Linux.
 
 Para empezar, vamos a añadir un disco en nuestro servidor utilizando nuestra herramienta de virtualización, ya sea VMware, VirtualBox, KVM, etcétera. Damos por hecho que sabéis hacer esta parte, porque cada herramienta es un mundo.
 

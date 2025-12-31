@@ -8,7 +8,7 @@ tags: [linux, ubuntu, rocky, freeipa]
 categories: [linux, ubuntu, rocky, freeipa]
 ---
 
-En este post empezaremos a añadir servidores a nuestro dominio local, el cual desplegamos en el anterior [post](https://www.samurantech.com/instalar-freeipa-server-rockylinux/), para poder conectarnos a ellos mediante la autenticación centralizada que nos ofrece IPA.
+En este post empezaremos a añadir servidores a nuestro dominio local, el cual desplegamos en el anterior [post](https://www.samurantech.com/posts/instalar-freeipa-server-rockylinux/), para poder conectarnos a ellos mediante la autenticación centralizada que nos ofrece IPA.
 
 Para este caso voy a usar de cliente otro Rocky Linux, pero dejaré también los comandos para instalarlo en un Ubuntu.
 

@@ -111,4 +111,4 @@ En los siguientes posts veremos cómo crear usuarios desde la web, cómo añadir
 Espero que os haya gustado y os haya servido de ayuda. ¡Hasta la próxima!
 
 [rockylinux]: https://rockylinux.org/
-[ipestatica]: https://samurantech.com/configurar-ip-estatica-centos/
+[ipestatica]: https://samurantech.com/posts/configurar-ip-estatica-centos/

@@ -161,7 +161,7 @@ Para el nombre que aparece en la terminal `[root@localhost ~]#`, con salir de la
 
 Espero que os haya gustado y os haya servido de ayuda. ¡Hasta la próxima!
 
-[centosraspberry]: https://www.samurantech.com/instalar-centos-raspberry-pi/
+[centosraspberry]: https://www.samurantech.com/posts/instalar-centos-raspberry-pi/
 [dhcplink]: https://es.wikipedia.org/wiki/Protocolo_de_configuraci%C3%B3n_din%C3%A1mica_de_host
 [ipscanner]: https://www.advanced-ip-scanner.com/es/
 [puttylink]: https://www.putty.org/

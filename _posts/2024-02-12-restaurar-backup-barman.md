@@ -8,7 +8,7 @@ tags: [linux, ubuntu, postgres, backup]
 categories: [linux, ubuntu, postgres, backup]
 ---
 
-En anteriores [posts](https://www.samurantech.com/instalar-barman/), instalamos y configuramos Barman para que se encargase de las copias de seguridad de nuestras BBDD montadas sobre PostgreSQL. En este veremos cómo restaurar uno de los backups que hayamos hecho.
+En anteriores [posts](https://www.samurantech.com/posts/instalar-barman/), instalamos y configuramos Barman para que se encargase de las copias de seguridad de nuestras BBDD montadas sobre PostgreSQL. En este veremos cómo restaurar uno de los backups que hayamos hecho.
 
 Para ello seguiremos los siguientes pasos:
 
