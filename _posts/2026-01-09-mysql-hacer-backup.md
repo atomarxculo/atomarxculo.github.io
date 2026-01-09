@@ -3,7 +3,7 @@ title: Hacer backup de una BDD en MySQL
 date: 2026-01-09 17:25:00 +0100
 description: Por si no os habéis dado cuenta, he tenido que empezar a trabajar más con MySQL, haciendo que pueda escribir más posts al respecto. El de hoy va sobre un comando muy simple para hacer backups de forma fácil y cómoda.
 image: /assets/img/sysadmin.jpg # Add image post (optional)
-tags: [linux, mysql]
+tags: [linux, mysql, mariadb]
 categories: [linux, mysql]
 ---
 

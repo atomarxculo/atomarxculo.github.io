@@ -3,7 +3,7 @@ title: Cambiar contraseña a un usuario en MySQL
 date: 2025-12-31 18:25:00 +0100
 description: Otro post cortito enfocado a MySQL, esta vez para cambiar la contraseña de cualquier usuario.
 image: /assets/img/sysadmin.jpg # Add image post (optional)
-tags: [linux, mysql]
+tags: [linux, mysql, mariadb]
 categories: [linux, mysql]
 ---
 

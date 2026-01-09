@@ -3,7 +3,7 @@ title: Ver listado de usuarios/permisos en MySQL
 date: 2025-12-30 18:25:00 +0100
 description: Este post será algo breve aunque muy útil si os pasa como a mí que está más acostumbrado a trabajar con PostgreSQL y tenéis que cambiar a MySQL, parecéis un elefante en una cacharrería.
 image: /assets/img/sysadmin.jpg # Add image post (optional)
-tags: [linux, mysql]
+tags: [linux, mysql, mariadb]
 categories: [linux, mysql]
 ---
 
