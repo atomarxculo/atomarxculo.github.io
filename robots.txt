@@ -1,0 +1,6 @@
+User-agent: *
+
+Disallow: /norobots/
+Disallow: /post_in_progress/
+
+Sitemap: https://www.samurantech.com/sitemap.xml
