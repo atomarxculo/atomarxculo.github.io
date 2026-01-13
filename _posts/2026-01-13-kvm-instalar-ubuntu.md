@@ -1,6 +1,6 @@
 ---
 title: Instalar KVM en Ubuntu
-date: 2026-01-13 17:25:00 +0100
+date: 2026-01-13 18:25:00 +0100
 description: Hace poco tuve que desplegar un servidor con bastante recursos al que no podíamos instalarle proxmox para sacarle todo su potencial, así que decidimos utilizar KVM y aproveché para documentar varios apartados de cómo utilizarlo.
 image: /assets/img/sysadmin.jpg # Add image post (optional)
 tags: [linux, kvm, virtualizacion]
