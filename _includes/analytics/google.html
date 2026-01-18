@@ -1,5 +1,5 @@
-<!-- Global site tag (gtag.js) - Google Analytics via Cloudflare Worker -->
-<script defer src="/ga/gtag/js?id={{ site.analytics.google.id }}"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script defer src="https://www.googletagmanager.com/gtag/js?id={{ site.analytics.google.id }}"></script>
 <script>
   document.addEventListener('DOMContentLoaded', () => {
     window.dataLayer = window.dataLayer || [];
@@ -8,9 +8,6 @@
     }
 
     gtag('js', new Date());
-
-    gtag('config', '{{ site.analytics.google.id }}', {
-      transport_url: '/ga'
-    });
+    gtag('config', '{{ site.analytics.google.id }}');
   });
 </script>
