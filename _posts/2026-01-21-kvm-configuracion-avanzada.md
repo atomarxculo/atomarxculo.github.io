@@ -1,6 +1,6 @@
 ---
 title: Configuración avanzada en KVM
-date: 2026-01-19 18:25:00 +0100
+date: 2026-01-21 18:25:00 +0100
 description: Con este post terminaremos (de momento) la miniserie relacionada con KVM, donde veremos comandos más avanzados, que nos permitirán gestionar KVM al siguiente nivel.
 image: /assets/img/sysadmin.jpg # Add image post (optional)
 tags: [linux, kvm, virtualizacion]
