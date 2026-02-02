@@ -1,8 +1,8 @@
 ---
 title: Solución al escenario Trust de Dockerlabs
 date: 2026-01-23 18:25:00 +0100
-description: 
-../assets/img/posts/dockerlabs-trust: /assets/img/ciberseguridad-logo.jpg # Add ../assets/img/posts/dockerlabs-trust post (optional)
+description:
+image: /assets/img/ciberseguridad-logo.jpg # Add ../assets/img/posts/dockerlabs-trust post (optional)
 tags: [ciberseguridad, dockerlabs]
 categories: [ciberseguridad]
 ---
@@ -25,7 +25,7 @@ nmap -sS 172.18.0.2
 ```
 
 Resultado:  
-![alt text](../assets/img/posts/dockerlabs-trust-1.png)
+![alt text](../assets/img/posts/dockerlabs-trust-1.png){: .w-75 .normal}
 
 Obtenemos que hay dos puertos abiertos, el 22 (SSH) y 80 (HTTP). Hacemos un escaneo de esos puertos para obtener más información al respecto.
 ```bash
@@ -33,10 +33,10 @@ nmap -sV -p 22,80 -vvv 172.18.0.2
 ```
 
 Resultado:  
-![alt text](../assets/img/posts/dockerlabs-trust-2.png)
+![alt text](../assets/img/posts/dockerlabs-trust-2.png){: .w-75 .normal}
 
 Nos conectamos por firefox a la URL y nos sale la página por defecto de Apache2:
-![alt text](../assets/img/posts/dockerlabs-trust-3.png)
+![alt text](../assets/img/posts/dockerlabs-trust-3.png){: .w-75 .normal}
 
 Para poder continuar vamos a hacer un escaneo con el comando `gobuster` para obtener un listado de ficheros o directorios a los que se pueda acceder desde el servidor web.
 ```bash
@@ -44,15 +44,15 @@ gobuster dir -u http://172.18.0.2 -w /usr/share/wordlists/dirbuster/directory-li
 ```
 
 Resultado:  
-![alt text](../assets/img/posts/dockerlabs-trust-4.png)
+![alt text](../assets/img/posts/dockerlabs-trust-4.png){: .w-75 .normal}
 
 Vemos que hay disponibles, `index.html`, que es la página de inicio, `secret.php` y `/server-status`, pero este último nos da un 403.
 
 Si nos conectamos a `secret.php` nos aparece el siguiente mensaje:
-![alt text](../assets/img/posts/dockerlabs-trust-5.png)
+![alt text](../assets/img/posts/dockerlabs-trust-5.png){: .w-75 .normal}
 
 Vamos a revisar el código fuente de la web por si encontrásemos algo interesante al respecto, aunque en este caso no es así.  
-![alt text](../assets/img/posts/dockerlabs-trust-6.png)
+![alt text](../assets/img/posts/dockerlabs-trust-6.png){: .w-75 .normal}
 
 Vamos a probar ahora con **SSH** y con el usuario **mario** que nos ha salido al visitar `secret.php`. Para ello, vamos a usar la herramienta `hydra`para sacar la contraseña con un ataque de fuerza bruta (previamente hay que descomprimir el fichero `/usr/share/wordlists/rockyou.txt.gz`).
 
@@ -61,10 +61,10 @@ hydra -l mario -P /usr/share/wordlists/rockyou.txt ssh://172.18.0.2
 ```
 
 Resultado:  
-![alt text](../assets/img/posts/dockerlabs-trust-7.png)
+![alt text](../assets/img/posts/dockerlabs-trust-7.png){: .w-75 .normal}
 
 Probamos a acceder con la contraseña que nos ha salido:
-![alt text](../assets/img/posts/dockerlabs-trust-8.png)
+![alt text](../assets/img/posts/dockerlabs-trust-8.png){: .w-75 .normal}
 
 Vamos a comprobar si el usuario puede ejecutar algún binario como sudo con el siguiente comando.
 ```bash
@@ -72,13 +72,13 @@ sudo -l
 ```
 
 Y vemos que puede ejecutar `vim`
-![alt text](../assets/img/posts/dockerlabs-trust-9.png)
+![alt text](../assets/img/posts/dockerlabs-trust-9.png){: .w-75 .normal}
 
-Miramos en la URL https://gtfobins.github.io/ cómo podemos explotar ese acceso sudo a vim. La URL final donde podemos encontrar esto es https://gtfobins.github.io/gtfobins/vim/#sudo
-![alt text](../assets/img/posts/dockerlabs-trust-10.png)
+Miramos en la URL https://gtfobins.github.io/ cómo podemos explotar ese acceso sudo a vim. La URL final donde podemos encontrar esto es <https://gtfobins.github.io/gtfobins/vim/#sudo>
+![alt text](../assets/img/posts/dockerlabs-trust-10.png){: .w-75 .normal}
 
 Ejecutamos el primer comando y comprobamos que usuario somos después de eso:
-![alt text](../assets/img/posts/dockerlabs-trust-11.png)
+![alt text](../assets/img/posts/dockerlabs-trust-11.png){: .w-75 .normal}
 
 Con esto hemos conseguido escalar privilegios y por lo tanto, terminar el lab.
 
